@@ -18,13 +18,17 @@
           		<img src="img/logo.svg" alt="Muser" height="50">
               </a>
             </div>
-            <!-- Breakpoint en 768   para evitar salto -->
-            <form class="navbar-form pull-right" role="form">
+            <div class="col-xs-8 col-xs-push-4">
+            	<button class=" navbar-btn visible-xs">PIDE TU INVITACIÓN</button>
+            </div>
+            <form class="navbar-form hidden-xs" role="form">
             
-              <div class="form-group">
+              <div class="form-group col-xs-4 col-xs-push-5">
               	<input type="email" class="form-control" placeholder="Escribe tu email">
               </div>
-              <button type="submit" class="boton-morado">PIDE TU INVITACIÓN</button>
+              <div class="col-xs-3 col-xs-push-5">
+              	<button type="submit" class=" navbar-btn boton-morado" >PIDE TU INVITACIÓN</button>
+              </div>
             </form>
     	</div> 
 	</nav>   
@@ -92,7 +96,7 @@
 				¿Como lo hacemos?</p>
 		</div>
 		<div class="col-md-6">
-			<img src="img/smile.png" class="img-responsive">
+			<img src="img/smile.png" class="img-responsive center-block">
 		</div>
 		
 	</div>
@@ -128,10 +132,10 @@
 		<div class="center-block">
 			<form role="form">
             
-              <div class="form-group col-xs-4 col-xs-offset-4">
+              <div class="form-group col-xs-7 col-xs-offset-3">
               	<input type="email" class="form-control  center-block" placeholder="Escribe tu email">
               </div>
-              <div class="row col-xs-2 col-xs-offset-5">
+              <div class="row col-xs-4 col-xs-offset-4">
               	<button type="submit" class="boton-morado  center-block">PIDE TU INVITACIÓN</button>
               </div>
             </form>
@@ -140,6 +144,7 @@
 
 	<div class="row row-gris">
 		<div class="text-center">
+		<h1 class="titulares"> Nuestra filosofía. Nuestro manifiesto.</h1>
 			<p class="texto-corrido">
 			<!-- CSS
 			<style type="text/css">
@@ -168,23 +173,37 @@
 <div class="footer">
 	<div class="container">
 		<div class="row">
-			<img src="img/muserbrand.svg" alt="MUSER" class="img-responsive center-block">
-			<div class="row">
-				<div class="col-xs-2">
-					<ul class="texto-footer">
-						<li>Aviso Legal</li>
-					</ul>
-				</div>
-				<div class="col-xs-1 col-xs-offset-10">
-					<ul class="texto-footer text-center">
-						<li>Twitter</li>
-						<li>Facebook</li>
-						<li>Instagram</li>
-						<li>Vimeo</li>
-					</ul>
-				</div>
+			<div class="col-xs-2 col-xs-offset-5">
+				<img src="img/muserbrand.svg" alt="MUSER" class="center-block">
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-xs-2 hidden-xs ">
+				<ul class="list-inline texto-footer">
+					<li>Aviso Legal</li>
+				</ul>				
+			</div>
+				<div class="col-xs-2 col-sm-push-8 hidden-xs">
+				<ul class="texto-footer list-inline">
+					<li>Twitter</li>
+					<li>Facebook</li>
+					<li>Instagram</li>
+					<li>Vimeo</li>	
+				</ul>
+			</div>
+
+			<div class="text-center visible-xs">
+				<ul class="texto-footer list-inline">
+					<li>Twitter</li>
+					<li>Facebook</li>
+					<li>Instagram</li>
+					<li>Vimeo</li>	
+				</ul>
+			</div>
+				
+		
+		</div>
+		
 		<hr>
 	</div>
 </div>
