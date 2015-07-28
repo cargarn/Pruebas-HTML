@@ -1,0 +1,81 @@
+
+.titulares{
+	font-family: 'LatoHairline', sans-serif;
+	font-size: 2em;
+	line-height: 16pt;
+	color: #1E1E1E;
+}
+.row-gris{
+	display: block;
+	background-color: #F6F6F6;
+	padding-top: 25px;
+    padding-bottom: 80px;
+
+}
+.row-blanca{
+	display: block;
+	background-color:#FFFFFF;
+	padding-top: 25px;
+    padding-bottom: 80px;
+}
+
+
+.row-nisa{
+	display: block;
+	background-image: url('../img/nisa.png');
+	height: 25em;
+	padding-top: 25px;
+    padding-bottom: 80px;
+}
+ol.center { text-align: center; list-style-position:inside;}
+
+.footer{
+	display: block;
+	background-color: #1E1E1E;
+	color: #FFFFFF;
+	padding-top: 25px;
+    padding-bottom: 80px;
+
+}
+.texto-footer{
+	font-family: 'LatoLight', sans-serif;
+	font-size: 0.75em;
+	line-height: normal;
+}
+
+@media(min-width: 768px){
+	.text-sm-right{
+		text-align: right;
+	}
+}
+@media (max-width: 767px) {
+    .text-sm-right, 
+    .text-sm-left {
+        text-align: center;
+    } 
+}
+
+hr { 
+    color: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'LatoHairline';
+    src: url('../fonts/Lato-Hairline.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+	}
+
+@font-face {
+    font-family: 'LatoLight';
+    src: url('../fonts/Lato-Light.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+	}
+
+	@font-face {
+    font-family: 'LatoBold';
+    src: url('../fonts/Lato-Bold.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+	}
