@@ -1,10 +1,21 @@
 
 .titulares{
 	font-family: 'LatoHairline', sans-serif;
-	font-size: 2em;
-	line-height: 16pt;
+	font-size: 2.5em;
+	line-height: 25pt;
 	color: #1E1E1E;
 }
+
+.texto-corrido{
+	font-family: 'LatoLight', sans-serif;
+	font-size: 8.7pt;
+	line-height: 16pt;
+	color: #1E1E1E;
+
+
+}
+@media (min-width: @screen-sm-min) { ... }
+
 .row-gris{
 	display: block;
 	background-color: #F6F6F6;
@@ -53,6 +64,22 @@ ol.center { text-align: center; list-style-position:inside;}
     .text-sm-left {
         text-align: center;
     } 
+}
+
+.boton-morado{
+
+	background: transparent;
+	color: #E5007E;
+	border-color: #E5007E;
+	border-width: 2px;
+	font-family: 'LatoBold', sans-serif;
+
+	/* CSS Transition */
+	-webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+	-ms-transition: background .2s ease-in-out, border .2s ease-in-out;
+	-o-transition: background .2s ease-in-out, border .2s ease-in-out;
+	transition: background .2s ease-in-out, border .2s ease-in-out;
 }
 
 hr { 
