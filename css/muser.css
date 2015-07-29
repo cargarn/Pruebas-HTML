@@ -74,12 +74,24 @@ ol.center { text-align: center; list-style-position:inside;}
 	border-width: 2px;
 	font-family: 'LatoBold', sans-serif;
 
+
 	/* CSS Transition */
 	-webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
 	-moz-transition: background .2s ease-in-out, border .2s ease-in-out;
 	-ms-transition: background .2s ease-in-out, border .2s ease-in-out;
 	-o-transition: background .2s ease-in-out, border .2s ease-in-out;
 	transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+.boton-morado:focus{
+	background: #E5007E;
+	color: #FFFFFF;
+	border-color: #E5007E;
+}
+
+.boton-morado:hover{
+	background: #E5007E;
+	color: #FFFFFF;
+	border-color: #E5007E;
 }
 
 hr { 
