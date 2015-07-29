@@ -19,15 +19,15 @@
 .row-gris{
 	display: block;
 	background-color: #F6F6F6;
-	padding-top: 25px;
+	padding-top: 40px;
     padding-bottom: 80px;
 
 }
 .row-blanca{
 	display: block;
 	background-color:#FFFFFF;
-	padding-top: 25px;
-    padding-bottom: 80px;
+	padding-top: 40px;
+    padding-bottom: 100px;
 }
 
 
@@ -82,6 +82,7 @@ ol.center { text-align: center; list-style-position:inside;}
 	-o-transition: background .2s ease-in-out, border .2s ease-in-out;
 	transition: background .2s ease-in-out, border .2s ease-in-out;
 }
+
 .boton-morado:focus{
 	background: #E5007E;
 	color: #FFFFFF;
@@ -92,6 +93,12 @@ ol.center { text-align: center; list-style-position:inside;}
 	background: #E5007E;
 	color: #FFFFFF;
 	border-color: #E5007E;
+}
+ul
+{
+    list-style-type: none;
+    padding:0;
+     margin:0;
 }
 
 hr { 
