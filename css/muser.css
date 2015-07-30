@@ -11,23 +11,38 @@
 	font-size: 8.7pt;
 	line-height: 16pt;
 	color: #1E1E1E;
+	vertical-align: center;
 
 
 }
 @media (min-width: @screen-sm-min) { ... }
+
+nav.navbar.navbar-default {
+border-top: none;
+background-color: #FFFFFF;
+opacity: 0.8;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-bottom-color: #C4C4C4;
+
+}
 
 .row-gris{
 	display: block;
 	background-color: #F6F6F6;
 	padding-top: 40px;
     padding-bottom: 80px;
+    vertical-align: center;
+
 
 }
 .row-blanca{
 	display: block;
 	background-color:#FFFFFF;
 	padding-top: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
+    vertical-align: center;
+    padding-right: 0px;
 }
 
 
@@ -64,7 +79,23 @@ ol.center { text-align: center; list-style-position:inside;}
     .text-sm-left {
         text-align: center;
     } 
+
 }
+.grey-form{
+	background:#F6F6F6;
+	color: #C4C4C4;
+	outline: none;
+	width: 250px;
+  	border: none !important;
+ 	 -webkit-box-shadow: none !important;
+ 	 -moz-box-shadow: none !important;
+ 	 box-shadow: none !important;
+
+}
+.form-control::-webkit-input-placeholder { color: #C4C4C4; font-family:'LatoLight';font-size: 10pt;  }
+.form-control:-moz-placeholder { color: #C4C4C4;font-family:'LatoLight'; font-size: 10pt;}
+.form-control::-moz-placeholder { color: #C4C4C4; font-family:'LatoLight'; font-size: 10pt;}
+.form-control:-ms-input-placeholder { color: #C4C4C4;font-family:'LatoLight'; font-size: 10pt;}
 
 .boton-morado{
 
@@ -73,6 +104,7 @@ ol.center { text-align: center; list-style-position:inside;}
 	border-color: #E5007E;
 	border-width: 2px;
 	font-family: 'LatoBold', sans-serif;
+	font-size: 8pt;
 
 
 	/* CSS Transition */
@@ -87,12 +119,14 @@ ol.center { text-align: center; list-style-position:inside;}
 	background: #E5007E;
 	color: #FFFFFF;
 	border-color: #E5007E;
+
 }
 
 .boton-morado:hover{
 	background: #E5007E;
 	color: #FFFFFF;
 	border-color: #E5007E;
+
 }
 ul
 {
@@ -104,6 +138,35 @@ ul
 hr { 
     color: #FFFFFF;
 }
+
+.carousel-fade .carousel-inner > .item {
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner > .item,
+.carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+}
+.carousel-fade .carousel-inner > .item.active,
+.carousel-fade .carousel-inner > .item.next.left {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner > .next,
+.carousel-fade .carousel-inner > .prev,
+.carousel-fade .carousel-inner > .active.left,
+.carousel-fade .carousel-inner > .active.right {
+    left: 0;
+}
+.carousel-fade .carousel-inner > .item.next,
+.carousel-fade .carousel-inner > .item.active.right,
+.carousel-fade .carousel-inner > .item.prev,
+.carousel-fade .carousel-inner > .item.active.left {
+    transform: translate3d(0, 0, 0);
+}
+
+
+
+
+
 
 @font-face {
     font-family: 'LatoHairline';
