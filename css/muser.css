@@ -12,18 +12,14 @@
 	line-height: 16pt;
 	color: #1E1E1E;
 	vertical-align: center;
-
-
 }
-@media (min-width: @screen-sm-min) { ... }
 
 nav.navbar.navbar-default {
-border-top: none;
-background-color: #FFFFFF;
-opacity: 0.8;
-border-bottom-style: solid;
-border-bottom-width: 1px;
-border-bottom-color: #C4C4C4;
+	border-top: none;
+	background-color: rgba(255,255,255,0.8);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #C4C4C4;
 
 }
 
@@ -40,9 +36,9 @@ border-bottom-color: #C4C4C4;
 	display: block;
 	background-color:#FFFFFF;
 	padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     vertical-align: center;
-    padding-right: 0px;
+   
 }
 
 
@@ -81,7 +77,19 @@ ol.center { text-align: center; list-style-position:inside;}
     } 
 
 }
+.white-form{
+	background: #FFFFFF;
+	color: #C4C4C4;
+	border: none;
+	outline: none;
+	
+}
+
 .grey-form{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display:inline-block;
+	text-align: center;
 	background:#F6F6F6;
 	color: #C4C4C4;
 	outline: none;
