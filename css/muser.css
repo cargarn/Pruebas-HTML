@@ -1,22 +1,18 @@
 
 .titulares{
 	font-family: 'LatoHairline', sans-serif;
-	font-size: 2.5em;
 	line-height: 25pt;
 	color: #1E1E1E;
 }
 
+
 .texto-corrido{
 	font-family: 'LatoLight', sans-serif;
-	font-size: 8.7pt;
-	line-height: 16pt;
 	color: #1E1E1E;
-	vertical-align: center;
 }
 
 nav.navbar.navbar-default {
 	border-top: none;
-	background-color: rgba(255,255,255,0.8);
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	border-bottom-color: #C4C4C4;
@@ -36,8 +32,6 @@ nav.navbar.navbar-default {
 	display: block;
 	background-color:#FFFFFF;
 	padding-top: 40px;
-    padding-bottom: 60px;
-    vertical-align: center;
    
 }
 
@@ -45,9 +39,6 @@ nav.navbar.navbar-default {
 .row-nisa{
 	display: block;
 	background-image: url('../img/nisa.png');
-	height: 25em;
-	padding-top: 25px;
-    padding-bottom: 80px;
 }
 ol.center { text-align: center; list-style-position:inside;}
 
@@ -56,12 +47,12 @@ ol.center { text-align: center; list-style-position:inside;}
 	background-color: #1E1E1E;
 	color: #FFFFFF;
 	padding-top: 25px;
-    padding-bottom: 80px;
 
 }
+
+
 .texto-footer{
 	font-family: 'LatoLight', sans-serif;
-	font-size: 0.75em;
 	line-height: normal;
 }
 
@@ -77,6 +68,7 @@ ol.center { text-align: center; list-style-position:inside;}
     } 
 
 }
+
 .white-form{
 	background: #FFFFFF;
 	color: #C4C4C4;
@@ -93,7 +85,6 @@ ol.center { text-align: center; list-style-position:inside;}
 	background:#F6F6F6;
 	color: #C4C4C4;
 	outline: none;
-	width: 250px;
   	border: none !important;
  	 -webkit-box-shadow: none !important;
  	 -moz-box-shadow: none !important;
