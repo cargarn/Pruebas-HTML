@@ -26,9 +26,11 @@ nav.navbar.navbar-default {
 }
 
 @media(min-width: 768px){
-	.titulares{font-size: 40px;
-				line-height: 35pt;}
-	.texto-corrido{font-size: 13px;}
+	.titulares{font-size: 55px;
+				line-height: 35pt;
+				padding-bottom: 17px;}
+	.texto-corrido{font-size: 18px;
+					line-height: 18pt}
 }
 
 
