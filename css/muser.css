@@ -95,6 +95,12 @@ ol.center { text-align: center; list-style-position:inside;}
 	padding-top: 50px;
 
 }
+.texto-footer:focus{
+	color: #E5007E;
+}
+.texto-footer:hover{
+	color: #E5007E;
+}
 
 @media(min-width: 768px){
 	.text-sm-right{
