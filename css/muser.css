@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'LatoHairline';
+    src: url('../fonts/Lato-Hairline.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+	}
+
+@font-face {
+    font-family: 'LatoLight';
+    src: url('../fonts/Lato-Light.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+	}
+
+	@font-face {
+    font-family: 'LatoBold';
+    src: url('../fonts/Lato-Bold.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+	}
+
+
+
 nav.navbar.navbar-default {
 	border-top: none;
 	background-color: rgba(255,255,255,0.8);
@@ -9,7 +32,7 @@ nav.navbar.navbar-default {
 
 .titulares{
 	font-family: 'LatoHairline', sans-serif;
-	font-size: 35px;
+	font-size: 37px;
 	line-height: 25pt;
 	color: #1E1E1E;
 	padding-bottom: 1px;
@@ -18,7 +41,7 @@ nav.navbar.navbar-default {
 
 .texto-corrido{
 	font-family: 'LatoLight', sans-serif;
-	font-size: 10.5px;
+	font-size: 13px;
 	line-height:16px;
 	color: #1E1E1E;
 	vertical-align: middle;
