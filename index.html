@@ -18,23 +18,22 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
     	<div class="container-fluid">  
           	<div class="col-xs-1 navbar-header">
-              		<a class="" href="#"><img src="img/Muser.svg" alt="Muser" height="50"></a>
-        		<!-- Botones duplicados, pensando en funcionalidades distintas para cada uno, quizas se puede lograr desde mediaq, o js y unificar 1 boton -->
-        	</div>
-	        <div class="navbar-right pull-right">
-	        	<button type="submit" class="btn navbar-btn boton-morado visible-xs">PIDE TU INVITACIÓN</button>
-	        </div>
-	        <div class="hidden-xs">
-	           	<form class="navbar-form navbar-right" role="form" name="form" method="post" action=""  onsubmit="document.form.pide.click(); return false;" >
-	        	  <div class="form-group">
-					<input type="email" id="email" name="email" class="white-form form-control hidden-xs" placeholder="Escribe tu email"required/>
-					<input type="submit" class="btn boton-morado" value="PIDE TU INVITACIÓN" />
-					<!-- Se esconde para que no se vea el efecto de que hay este boton -->
-					<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Pide tu invitación</button>
-				  </div>
-	      		</form>
-	    	</div> 
-	</div>
+              <a class="" href="#">
+          		<img src="img/Muser.svg" alt="Muser" height="50">
+              </a>
+              <!-- Botones duplicados, pensando en funcionalidades distintas para cada uno, quizas se puede lograr desde mediaq, o js y unificar 1 boton -->
+            </div>
+            <div class="navbar-right pull-right">
+            	<button type="submit" class="btn navbar-btn boton-morado visible-xs">PIDE TU INVITACIÓN</button>
+            	</div>
+           <div class="hidden-xs">
+           <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control white-form" placeholder="Escribe tu email">
+        </div>
+        <button type="submit" class="btn boton-morado">PIDE TU INVITACIÓN</button>
+      </form>
+    	</div> 
 	</nav>   
 </div>
 
@@ -140,15 +139,14 @@
 			<p class="texto-corrido">Seas artísta o melómano escribe tu mail para ser de los primeros en disfrutar de Muser.</p>
 		</div>
 		<div class="">
-			<form role="form" class="text-center"  name="form2" method="post" action=""  onsubmit="document.form2.pide.click(); return false;" >
-				<div class="form-group">
-					<input type="email" id="email" name="email" class="grey-form form-control" placeholder="Escribe tu email"required/>
-				</div>
-				
-				<input type="submit" class="btn boton-morado" value="PIDE TU INVITACIÓN" />
-				
-				<!-- Se esconde para que no se vea el efecto de que hay este boton -->
-				<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Pide tu invitación</button>
+			<form role="form" class="text-center">
+            
+              <div class="form-group">
+              	<input type="email" class="form-control grey-form" placeholder="Escribe tu email">
+              </div>
+              
+              	<button type="submit" class="btn boton-morado">PIDE TU INVITACIÓN</button>
+              
             </form>
 		</div>
 	</div>
@@ -161,84 +159,18 @@
 			<style type="text/css">
 				 .center { text-align: center; list-style-position:inside;}
 			</style> -->
-				<!-- Version PC -->
-				<ul class="hidden-xs center texto-corrido ">
-					<li>
-						<a onmouseover="cambiar('ejemplo1'); return false;" onmouseout="cambiar('ejemplo1'); return true;" >1. Principios y esas cosas</a>
-						<div id="ejemplo1" style="display: none;">
-							texto del primer principio y tal y cual...
-						</div>
-					</li>
-					<li>
-						<a onmouseover="cambiar('ejemplo2'); return false;" onmouseout="cambiar('ejemplo2'); return true;" >2. Principios y esas cosas</a>
-						<div id="ejemplo2" style="display: none;">
-							texto del segundo principio y tal y cual...
-						</div>
-					</li>
-					<li>
-						<a onmouseover="cambiar('ejemplo3'); return false;" onmouseout="cambiar('ejemplo3'); return true;" >3. Principios y esas cosas</a>
-						<div id="ejemplo3" style="display: none;">
-							texto del tercer principio y tal y cual...
-						</div>
-					</li>
-					<li>
-						<a onmouseover="cambiar('ejemplo4'); return false;" onmouseout="cambiar('ejemplo4'); return true;" >4. Principios y esas cosas</a>
-						<div id="ejemplo4" style="display: none;">
-							texto del cuarto principio y tal y cual...
-						</div>
-					</li>
-					<li>
-						<a onmouseover="cambiar('ejemplo5'); return false;" onmouseout="cambiar('ejemplo5'); return true;" >5. Principios y esas cosas</a>
-						<div id="ejemplo5" style="display: none;">
-							texto del quinto principio y tal y cual...
-						</div>
-					</li>
-					<li>
-						<a onmouseover="cambiar('ejemplo6'); return false;" onmouseout="cambiar('ejemplo6'); return true;" >6. Principios y esas cosas</a>
-						<div id="ejemplo6" style="display: none;">
-							texto del sexto principio y tal y cual...
-						</div>
-					</li>
-					<li>
-						<a onmouseover="cambiar('ejemplo7'); return false;" onmouseout="cambiar('ejemplo7'); return true;" >7. Principios y esas cosas</a>
-						<div id="ejemplo7" style="display: none;">
-							texto del septimo principio y tal y cual...
-						</div>
-					</li>
-					<li>
-						<a onmouseover="cambiar('ejemplo8'); return false;" onmouseout="cambiar('ejemplo8'); return true;" >8. Principios y esas cosas</a>
-						<div id="ejemplo8" style="display: none;">
-							texto del octavo principio y tal y cual...
-						</div>
-					</li>
-					<li>
-						<a onmouseover="cambiar('ejemplo9'); return false;" onmouseout="cambiar('ejemplo9'); return true;" >9. Principios y esas cosas</a>
-						<div id="ejemplo9" style="display: none;">
-							texto del noveno principio y tal y cual...
-						</div>
-					</li>
-					<li>
-						<a onmouseover="cambiar('ejemplo10'); return false;" onmouseout="cambiar('ejemplo10'); return true;" >10. Principios y esas cosas</a>
-						<div id="ejemplo10" style="display: none;">
-							texto del decimo principio y tal y cual...
-						</div>
-					</li>
-				</ul>
+				<ul class="center texto-corrido ">
+					<li>1.Principios y esas cosas</li>
+					<li>2.Principios y esas cosas</li>
+					<li>3.Principios y esas cosas</li>
+					<li>4.Principios y esas cosas</li>
+					<li>5.Principios y esas cosas</li>
+					<li>6.Principios y esas cosas</li>
+					<li>7.Principios y esas cosas</li>
+					<li>8.Principios y esas cosas</li>
+					<li>9.Principios y esas cosas</li>
+					<li>10.Principios y esas cosas</li>
 
-				<!-- Version movil -->
-				<ul class="visible-xs">
-					<li>
-						<a href="#" data-toggle="modal" data-target="#popUpPeque">1. Principios y esas cosas</a>
-						<div id="ejemplo1" style="display: none;">
-							texto del primer principio y tal y cual...
-						</div>
-					</li>
-					<li>
-						<a href="#" data-toggle="modal" data-target="#popUpPeque" >2. Principios y esas cosas</a>
-						<div id="ejemplo2" style="display: none;">
-							texto del segundo principio y tal y cual...
-						</div>
-					</li>
 				</ul>
 			</p>
 		</div>
@@ -271,59 +203,7 @@
 	</div>
 </div>
 
-<!--POPUPS-->
-	<!-- Ventana modal para Pedir Invitacion -->
-	<div class="modal fade " id="myModalFullscreen"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-fullscreen">
-			<div class="modal-content modal-content-fullscreen">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				</div>
-				<div class="modal-body vertical-center text-center">
-					<h4 class="modal-title titulares">¡Gracias!</h4>
-					<p class="texto-corrido">Te hemos mandado un correo de confirmacion&hellip;</p>
-					<button type="button" class="btn btn-default" data-dismiss="modal" onclick="document.form.email.value='';">Ok</button>
-				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
 
-	<!-- Ventana modal POR HACER AUN para los moviles en el manifesto -->
-	<div class="modal fade" id="popUpPeque"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title">Primer principio</h4>
-					
-				</div>
-				<div class="modal-body">
-					<p>Descripcion del principio&hellip;</p>
-				</div>
-				
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-				</div>
-					
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-	
-<!-- JS manifest-->
-	<script>
-		/* Funcion para mostrar la descripcion de los manifestos debajo del titulo de cada uno */
-		function cambiar(esto){
-			vista=document.getElementById(esto).style.display;
-			if (vista=='none')
-				vista='block';
-			else
-				vista='none';
-
-			document.getElementById(esto).style.display = vista;
-		}
-
-	</script>
 <!-- JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
  	  	<script src="js/bootstrap.js"></script>

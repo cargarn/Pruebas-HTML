@@ -270,48 +270,26 @@ now override the 3.3 new styles for modern browsers & apply opacity
 }
 
 
-input:focus:invalid{
-	border: 1px solid red;
-}
-input:required:valid{
-	border: 1px solid green;
-}
 
-.modal-dialog-fullscreen {
-	position: fixed;
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	opacity:.80;
-	-moz-opacity: 0.80;
-	filter: alpha(opacity=80);
-}
 
-.modal-content-fullscreen {
-	background-color: rgba(255,255,255,0.8);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	border-radius: 0;
-	box-shadow: none;
-}
 
-.vertical-center{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 50%;
-	height: 30%;
-	margin: auto;
-}
-			
-	
+@font-face {
+    font-family: 'LatoHairline';
+    src: url('../fonts/Lato-Hairline.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+	}
+
+@font-face {
+    font-family: 'LatoLight';
+    src: url('../fonts/Lato-Light.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+	}
+
+	@font-face {
+    font-family: 'LatoBold';
+    src: url('../fonts/Lato-Bold.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+	}
