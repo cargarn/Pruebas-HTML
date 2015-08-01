@@ -140,14 +140,15 @@
 			<p class="texto-corrido">Seas artísta o melómano escribe tu mail para ser de los primeros en disfrutar de Muser.</p>
 		</div>
 		<div class="">
-			<form role="form" class="text-center">
-            
-              <div class="form-group">
-              	<input type="email" class="form-control grey-form" placeholder="Escribe tu email">
-              </div>
-              
-              	<button type="submit" class="btn boton-morado">PIDE TU INVITACIÓN</button>
-              
+			<form role="form" class="text-center"  name="form2" method="post" action=""  onsubmit="document.form2.pide.click(); return false;" >
+				<div class="form-group">
+					<input type="email" id="email" name="email" class="grey-form form-control" placeholder="Escribe tu email"required/>
+				</div>
+				
+				<input type="submit" class="btn boton-morado" value="PIDE TU INVITACIÓN" />
+				
+				<!-- Se esconde para que no se vea el efecto de que hay este boton -->
+				<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Pide tu invitación</button>
             </form>
 		</div>
 	</div>
@@ -160,18 +161,84 @@
 			<style type="text/css">
 				 .center { text-align: center; list-style-position:inside;}
 			</style> -->
-				<ul class="center texto-corrido ">
-					<li>1.Principios y esas cosas</li>
-					<li>2.Principios y esas cosas</li>
-					<li>3.Principios y esas cosas</li>
-					<li>4.Principios y esas cosas</li>
-					<li>5.Principios y esas cosas</li>
-					<li>6.Principios y esas cosas</li>
-					<li>7.Principios y esas cosas</li>
-					<li>8.Principios y esas cosas</li>
-					<li>9.Principios y esas cosas</li>
-					<li>10.Principios y esas cosas</li>
+				<!-- Version PC -->
+				<ul class="hidden-xs center texto-corrido ">
+					<li>
+						<a onmouseover="cambiar('ejemplo1'); return false;" onmouseout="cambiar('ejemplo1'); return true;" >1. Principios y esas cosas</a>
+						<div id="ejemplo1" style="display: none;">
+							texto del primer principio y tal y cual...
+						</div>
+					</li>
+					<li>
+						<a onmouseover="cambiar('ejemplo2'); return false;" onmouseout="cambiar('ejemplo2'); return true;" >2. Principios y esas cosas</a>
+						<div id="ejemplo2" style="display: none;">
+							texto del segundo principio y tal y cual...
+						</div>
+					</li>
+					<li>
+						<a onmouseover="cambiar('ejemplo3'); return false;" onmouseout="cambiar('ejemplo3'); return true;" >3. Principios y esas cosas</a>
+						<div id="ejemplo3" style="display: none;">
+							texto del tercer principio y tal y cual...
+						</div>
+					</li>
+					<li>
+						<a onmouseover="cambiar('ejemplo4'); return false;" onmouseout="cambiar('ejemplo4'); return true;" >4. Principios y esas cosas</a>
+						<div id="ejemplo4" style="display: none;">
+							texto del cuarto principio y tal y cual...
+						</div>
+					</li>
+					<li>
+						<a onmouseover="cambiar('ejemplo5'); return false;" onmouseout="cambiar('ejemplo5'); return true;" >5. Principios y esas cosas</a>
+						<div id="ejemplo5" style="display: none;">
+							texto del quinto principio y tal y cual...
+						</div>
+					</li>
+					<li>
+						<a onmouseover="cambiar('ejemplo6'); return false;" onmouseout="cambiar('ejemplo6'); return true;" >6. Principios y esas cosas</a>
+						<div id="ejemplo6" style="display: none;">
+							texto del sexto principio y tal y cual...
+						</div>
+					</li>
+					<li>
+						<a onmouseover="cambiar('ejemplo7'); return false;" onmouseout="cambiar('ejemplo7'); return true;" >7. Principios y esas cosas</a>
+						<div id="ejemplo7" style="display: none;">
+							texto del septimo principio y tal y cual...
+						</div>
+					</li>
+					<li>
+						<a onmouseover="cambiar('ejemplo8'); return false;" onmouseout="cambiar('ejemplo8'); return true;" >8. Principios y esas cosas</a>
+						<div id="ejemplo8" style="display: none;">
+							texto del octavo principio y tal y cual...
+						</div>
+					</li>
+					<li>
+						<a onmouseover="cambiar('ejemplo9'); return false;" onmouseout="cambiar('ejemplo9'); return true;" >9. Principios y esas cosas</a>
+						<div id="ejemplo9" style="display: none;">
+							texto del noveno principio y tal y cual...
+						</div>
+					</li>
+					<li>
+						<a onmouseover="cambiar('ejemplo10'); return false;" onmouseout="cambiar('ejemplo10'); return true;" >10. Principios y esas cosas</a>
+						<div id="ejemplo10" style="display: none;">
+							texto del decimo principio y tal y cual...
+						</div>
+					</li>
+				</ul>
 
+				<!-- Version movil -->
+				<ul class="visible-xs">
+					<li>
+						<a href="#" data-toggle="modal" data-target="#popUpPeque">1. Principios y esas cosas</a>
+						<div id="ejemplo1" style="display: none;">
+							texto del primer principio y tal y cual...
+						</div>
+					</li>
+					<li>
+						<a href="#" data-toggle="modal" data-target="#popUpPeque" >2. Principios y esas cosas</a>
+						<div id="ejemplo2" style="display: none;">
+							texto del segundo principio y tal y cual...
+						</div>
+					</li>
 				</ul>
 			</p>
 		</div>
