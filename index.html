@@ -271,6 +271,58 @@
 	</div>
 </div>
 
+<!--POPUPS-->
+	<!-- Ventana modal para Pedir Invitacion -->
+	<div class="modal fade " id="myModalFullscreen"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-fullscreen">
+			<div class="modal-content modal-content-fullscreen">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body vertical-center text-center">
+					<h4 class="modal-title titulares">¡Gracias!</h4>
+					<p class="texto-corrido">Te hemos mandado un correo de confirmacion&hellip;</p>
+					<button type="button" class="btn btn-default" data-dismiss="modal" onclick="document.form.email.value='';">Ok</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<!-- Ventana modal POR HACER AUN para los moviles en el manifesto -->
+	<div class="modal fade" id="popUpPeque"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Primer principio</h4>
+					
+				</div>
+				<div class="modal-body">
+					<p>Descripcion del principio&hellip;</p>
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				</div>
+					
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+<!-- JS -->
+	<script>
+		/* Funcion para mostrar la descripcion de los manifestos debajo del titulo de cada uno */
+		function cambiar(esto){
+			vista=document.getElementById(esto).style.display;
+			if (vista=='none')
+				vista='block';
+			else
+				vista='none';
+
+			document.getElementById(esto).style.display = vista;
+		}
+
 
 <!-- JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
