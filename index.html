@@ -24,7 +24,7 @@
 	        	<a href="#seccionPedir" class="btn navbar-btn boton-morado visible-xs">PIDE TU INVITACIÓN</a>
 	        </div>
 	        <div class="hidden-xs">
-	           	<form class="navbar-form navbar-right" role="form" name="form" method="post" action=""  onsubmit="document.form.pide.click(); return validar(this);" >
+	           	<form class="navbar-form navbar-right" role="form" name="form" method="post" action=""  onsubmit="return validar(this);" >
 	        	  <div class="form-group">
 					<input type="email" id="email" name="email" class="white-form form-control hidden-xs" placeholder="Escribe tu email"required/>
 					<input type="submit" class="btn boton-morado" value="PIDE TU INVITACIÓN" />
@@ -140,7 +140,7 @@
 			<p class="texto-corrido">Seas artísta o melómano escribe tu mail para ser de los primeros en disfrutar de Muser.</p>
 		</div>
 		<div class="">
-			<form role="form" class="text-center"  name="form2" method="post" action=""  onsubmit="document.form2.pide.click(); return validar(this);" >
+			<form role="form" class="text-center"  name="form2" method="post" action=""  onsubmit="return validar(this);" >
 				<div class="form-group">
 					<input type="email" id="email" name="email" class="grey-form form-control" placeholder="Escribe tu email"required/>
 				</div>
@@ -326,6 +326,7 @@
 				alert("Escriba una dirección de correo electronica válida ."); 
 				return (false); 
 			}else{
+				document.form2.pide.click();
 				return(false);
 			}
 		}
