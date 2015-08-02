@@ -24,7 +24,7 @@
 	        	<a href="#seccionPedir" class="btn navbar-btn boton-morado visible-xs">PIDE TU INVITACIÓN</a>
 	        </div>
 	        <div class="hidden-xs">
-	           	<form class="navbar-form navbar-right" role="form" name="form" method="post" action=""  onsubmit="document.form.pide.click(); return false;" >
+	           	<form class="navbar-form navbar-right" role="form" name="form" method="post" action=""  onsubmit="document.form.pide.click(); return validar(this);" >
 	        	  <div class="form-group">
 					<input type="email" id="email" name="email" class="white-form form-control hidden-xs" placeholder="Escribe tu email"required/>
 					<input type="submit" class="btn boton-morado" value="PIDE TU INVITACIÓN" />
@@ -285,19 +285,19 @@
 				<div class="modal-body vertical-center text-center">
 					<h4 class="modal-title titulares">¡Gracias!</h4>
 					<p class="texto-corrido">Te hemos mandado un correo de confirmacion&hellip;</p>
-					<button type="button" class="btn btn-default hidden-xs" data-dismiss="modal" onclick="document.form.email.value='';">Ok</button>
+					<button type="button" class="btn btn-default hidden-xs" data-dismiss="modal"  onclick="document.form.email.value='';">Ok</button>
 				</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
 
 	<!-- Ventana modal POR HACER AUN para los moviles en el manifesto -->
-	<div class="modal fade" id="popUpPeque"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal fade" id="popUpPeque"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" hidden="true">
 		<div class="modal-dialog modal-dialog-manifiesto">
 			<div class="modal-content modal-content-manifiesto">
 				<div class="modal-header">
 					<!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
-					<button type="button" class="btn boton-negro pull-right" data-dismiss="modal">Ok</button>
+					<button type="button" class="btn boton-negro pull-right" data-dismiss="modal" data-toggle="modal" data-target="#myModalFullscreen">Ok</button>
 				</div>
 				<div class="modal-body vertical-center text-center">
 					<h4 class="modal-title titulares">Primer principio</h4>
@@ -319,6 +319,15 @@
 				vista='none';
 
 			document.getElementById(esto).style.display = vista;
+		}
+		
+		function validar(formulario) {
+			if ((formulario.email.value.indexOf ('@', 0) == -1)||(formulario.email.value.length < 5)) { 
+				alert("Escriba una dirección de correo electronica válida ."); 
+				return (false); 
+			}else{
+				return(false);
+			}
 		}
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

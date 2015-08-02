@@ -289,6 +289,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
     font-weight: normal;
     font-style: normal;
 	}
+			.modal, .modal .navbar-fixed-top{
+				padding-right:0 !important;
+			}
+			body{
+				overflow-y: scroll !important;
+				padding-right:0;
+			}
 			
 			.modal-dialog-fullscreen {
 			  position: fixed;
