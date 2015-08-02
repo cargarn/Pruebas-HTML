@@ -279,13 +279,13 @@
 	<div class="modal fade " id="myModalFullscreen"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-fullscreen">
 			<div class="modal-content modal-content-fullscreen">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<div class="modal-header visible-xs">
+					<button type="button" class="btn boton-negro pull-right" data-dismiss="modal" onclick="document.form.email.value='';">Ok</button>
 				</div>
 				<div class="modal-body vertical-center text-center">
 					<h4 class="modal-title titulares">¡Gracias!</h4>
 					<p class="texto-corrido">Te hemos mandado un correo de confirmacion&hellip;</p>
-					<button type="button" class="btn btn-default" data-dismiss="modal" onclick="document.form.email.value='';">Ok</button>
+					<button type="button" class="btn btn-default hidden-xs" data-dismiss="modal" onclick="document.form.email.value='';">Ok</button>
 				</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
