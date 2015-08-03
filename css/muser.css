@@ -382,7 +382,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	margin: auto;
 }
 
-.titular-manifiesto:hover{
+.titular-manifiesto:hover, .titular-manifiesto:focus{
 	font-family: 'LatoBold', sans-serif;
 	color: #E5007E;
 	text-decoration:none;  
