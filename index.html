@@ -22,9 +22,10 @@
 	        	<a href="#seccionPedir" class="btn navbar-btn boton-morado visible-xs">PIDE TU INVITACIÓN</a>
 	        </div>
 	        <div class="hidden-xs">
-	           	<form class="navbar-form navbar-right" role="form" name="form" method="post" action=""  onsubmit="return validar(this);" >
-	        	  <div class="form-group">
-					<input type="email" id="email" name="email" class="white-form form-control hidden-xs" placeholder="Escribe tu email"required/>
+	           	<form class="navbar-form navbar-right" role="form" id="formaa" name="form" method="post" action=""  onsubmit="return false;" >
+	        	  <div class="form-group has-feedback">
+					<input type="email" id="email" name="email" class="white-form form-control hidden-xs" placeholder="Escribe tu email" required/>
+					<!--<span class="glyphicon form-control-feedback" id="email1"></span>-->
 					<input type="submit" class="btn boton-morado" value="PIDE TU INVITACIÓN" />
 					<!-- Se esconde para que no se vea el efecto de que hay este boton -->
 					<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Pide tu invitación</button>
@@ -34,10 +35,6 @@
 		</div>
 	</nav> 
 </div>
-
-
-
-
 
 <!--Carrousel-->
 
@@ -140,16 +137,16 @@
 			<p class="texto-corrido">Seas artista o melómano escribe tu mail para ser de los primeros en disfrutar de Muser.</p>
 		</div>
 		<div class="">
-			<form role="form" class="text-center"  name="form2" method="post" action=""  onsubmit="return validar(this);" >
+			<form role="form" class="text-center"  name="form2" id="formaa2" method="post" action=""  onsubmit="return false;" >
 				<div class="form-group">
-					<input type="email" id="email" name="email" class="grey-form form-control" placeholder="Escribe tu email"required/>
+					<input type="email" id="email" name="email" class="grey-form form-control" placeholder="Escribe tu email" required/>
 				</div>
 				
 				<input type="submit" class="btn boton-morado" value="PIDE TU INVITACIÓN" />
 				
 				<!-- Se esconde para que no se vea el efecto de que hay este boton -->
 				<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Pide tu invitación</button>
-            </form>
+            </form>	
 		</div>
 	</div>
 
@@ -329,7 +326,8 @@
 	</div><!-- /.modal -->
 	
 	<!-- JS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/funciones.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
