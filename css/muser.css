@@ -385,7 +385,8 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .titular-manifiesto:hover{
 	font-family: 'LatoBold', sans-serif;
 	color: #E5007E;
-	text-decoration:none;   
+	text-decoration:none;  
+	cursor:pointer;
 }
 
 .titular-manifiesto{
