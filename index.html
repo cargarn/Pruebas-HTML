@@ -35,69 +35,7 @@
 	</nav> 
 </div>
 
-<br><br><br>
 
-
-<form id="regexpEmailForm" class="form-horizontal">
-    <div class="form-group has-feedback">
-        <label for="fname" class="control-label col-md-6">First Name:</label>
-        <div class="col-md-6">
-            <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter first name" />
-            <span class="glyphicon form-control-feedback" id="fname1"></span>
-       </div>
-    </div>
-    <div class="form-group has-feedback">
-        <label for="lname" class="control-label col-md-6">Last Name</label>
-        <div class="col-md-6">
-            <input type="text" name="lname" id="lname" class="form-control" placeholder="Enter last name" />
-            <span class="glyphicon form-control-feedback" id="lname1"></span>
-        </div>
-    </div>  
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-
-<script>
-$(document).ready(function() {
-    $('#regexpEmailForm')
-        .formValidation({
-            framework: 'bootstrap',
-            icon: {
-                valid: 'glyphicon glyphicon-ok',
-                invalid: 'glyphicon glyphicon-remove',
-                validating: 'glyphicon glyphicon-refresh'
-            },
-            fields: {
-                email: {
-                    validators: {
-                        emailAddress: {
-                            message: 'The value is not a valid email address'
-                        },
-                        regexp: {
-                            regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
-                            message: 'The value is not a valid email address'
-                        }
-                    }
-                }
-            }
-        })
-        .on('err.validator.fv', function(e, data) {
-            // data.bv        --> The FormValidation.Base instance
-            // data.field     --> The field name
-            // data.element   --> The field element
-            // data.validator --> The current validator name
-
-            if (data.field === 'email') {
-                // The email field is not valid
-                data.element
-                    .data('fv.messages')
-                    // Hide all the messages
-                    .find('.help-block[data-fv-for="' + data.field + '"]').hide()
-                    // Show only message associated with current validator
-                    .filter('[data-fv-validator="' + data.validator + '"]').show();
-            }
-        });
-});
-</script>
 
 
 
