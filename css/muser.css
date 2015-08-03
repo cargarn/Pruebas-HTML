@@ -92,6 +92,15 @@ nav.navbar.navbar-default {
     padding-bottom: 90px;
     padding-top: 110px;
 }
+
+.row-nisa .titulares{
+	color: #FFFFFF;
+}
+
+.row-nisa .texto-corrido{
+	color: #FFFFFF;
+}
+
 ol.center { text-align: center; list-style-position:inside;}
 
 
@@ -283,93 +292,110 @@ now override the 3.3 new styles for modern browsers & apply opacity
     font-style: normal;
 	}
 
-	@font-face {
+@font-face {
     font-family: 'LatoBold';
     src: url('../fonts/Lato-Bold.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
-	}		
-			.modal-dialog-fullscreen {
-			  position: fixed;
-			  margin: 0;
-			  width: 100%;
-			  height: 100%;
-			  padding: 0;
-			  opacity:.80;
-			  -moz-opacity: 0.80;
-			  filter: alpha(opacity=80);
-			}
+}		
 
-			.modal-content-fullscreen {
-			  background: rgb(255,255,255,0.8);
-			  -webkit-background-size: cover;
-			  -moz-background-size: cover;
-			  -o-background-size: cover;
-			  background-size: cover;
-			  position: absolute;
-			  top: 0;
-			  right: 0;
-			  bottom: 0;
-			  left: 0;
-			  border-radius: 0;
-			  box-shadow: none;
-			}
+.modal-dialog-fullscreen {
+	position: fixed;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	opacity:.80;
+	-moz-opacity: 0.80;
+	filter: alpha(opacity=80);
+}
 
-			.modal-dialog-manifiesto {
-			  position: fixed;
-			  margin: 0;
-			  width: 100%;
-			  height: 100%;
-			  padding: 0;
-			}
+.modal-content-fullscreen {
+	background: rgb(255,255,255,0.8);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
 
-			.modal-content-manifiesto {
-			  -webkit-background-size: cover;
-			  -moz-background-size: cover;
-			  -o-background-size: cover;
-			  background-size: cover;
-			  position: absolute;
-			  top: 0;
-			  right: 0;
-			  bottom: 0;
-			  left: 0;
-			  border-radius: 0;
-			  box-shadow: none;
-			}
+.modal-dialog-manifiesto {
+	position: fixed;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+
+.modal-content-manifiesto {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
 			
-			.modal-dialog-avisolegal {
-			  position: fixed;
-			  margin: 0;
-			  width: 100%;
-			  height: 100%;
-			  padding: 0;
-			}
+.modal-dialog-avisolegal {
+	position: fixed;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
 
-			.modal-content-avisolegal {
-			  background-color: lightblue;
-			  -webkit-background-size: cover;
-			  -moz-background-size: cover;
-			  -o-background-size: cover;
-			  background-size: cover;
-			  position: absolute;
-			  top: 0;
-			  right: 0;
-			  bottom: 0;
-			  left: 0;
-			  border-radius: 0;
-			  box-shadow: none;
-			  overflow:scroll;
-			}
+.modal-content-avisolegal {
+	background-color: lightblue;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 0;
+	box-shadow: none;
+	overflow:scroll;
+}
 			
-			.vertical-center{
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				width: 50%;
-				height: 30%;
-				margin: auto;
-			}
-			
-	
+.vertical-center{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 50%;
+	height: 30%;
+	margin: auto;
+}
+
+.titular-manifiesto{
+	font-family: 'LatoLight', sans-serif;
+	font-size: 20px;
+	line-height:16px;
+	color: #1E1E1E;
+	vertical-align: middle;
+	padding-bottom: 10px;
+}
+
+.texto-manifiesto{
+	font-family: 'LatoLight', sans-serif;
+	font-size: 18px;
+	line-height:25px;
+	color: grey;
+	vertical-align: middle;
+	padding-bottom: 15px;
+}
