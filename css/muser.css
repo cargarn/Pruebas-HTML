@@ -397,5 +397,6 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	line-height:25px;
 	color: grey;
 	vertical-align: middle;
+	padding-top: 8px;
 	padding-bottom: 15px;
 }
