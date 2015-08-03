@@ -56,6 +56,39 @@ nav.navbar.navbar-default {
 					line-height: 18pt}
 }
 
+.titular-manifiesto:hover, .titular-manifiesto:focus{
+	font-family: 'LatoHairline', sans-serif;
+	color: #E5007E;
+	text-decoration:none;  
+	cursor:pointer;
+}
+
+.titular-manifiesto{
+	font-family: 'LatoHairline', sans-serif;
+	font-size: 15px;
+	line-height:20px;
+	color: #1E1E1E;
+	vertical-align: middle;
+	padding-bottom: 10px;
+}
+
+.texto-manifiesto{
+	font-family: 'LatoLight', sans-serif;
+	font-size: 13px;
+	line-height:16px;
+	color: #1E1E1E;
+	vertical-align: middle;
+	padding-top: 8px;
+	padding-bottom: 15px;
+}
+@media(min-width: 768px){
+	.titular-manifiesto{font-size: 20px;
+				line-height: 20px;
+				padding-bottom: 17px;}
+	.texto-manifiesto{font-size: 18px;
+					line-height: 25px;}
+				}
+
 
 nav.navbar.navbar-default {
 	border-top: none;
@@ -273,31 +306,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
               transform: translate3d(0, 0, 0);
     }
 }
-
-
-
-
-
-@font-face {
-    font-family: 'LatoHairline';
-    src: url('../fonts/Lato-Hairline.ttf') format("truetype");
-    font-weight: normal;
-    font-style: normal;
-	}
-
-@font-face {
-    font-family: 'LatoLight';
-    src: url('../fonts/Lato-Light.ttf') format("truetype");
-    font-weight: normal;
-    font-style: normal;
-	}
-
-@font-face {
-    font-family: 'LatoBold';
-    src: url('../fonts/Lato-Bold.ttf') format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}		
+	
 
 .modal-dialog-fullscreen {
 	position: fixed;
@@ -356,7 +365,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 }
 
 .modal-content-avisolegal {
-	background-color: lightblue;
+	background-color: rgba(255,255,255,0.9);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -382,28 +391,3 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	margin: auto;
 }
 
-.titular-manifiesto:hover, .titular-manifiesto:focus{
-	font-family: 'LatoBold', sans-serif;
-	color: #E5007E;
-	text-decoration:none;  
-	cursor:pointer;
-}
-
-.titular-manifiesto{
-	font-family: 'LatoLight', sans-serif;
-	font-size: 20px;
-	line-height:20px;
-	color: #1E1E1E;
-	vertical-align: middle;
-	padding-bottom: 10px;
-}
-
-.texto-manifiesto{
-	font-family: 'LatoLight', sans-serif;
-	font-size: 18px;
-	line-height:25px;
-	color: grey;
-	vertical-align: middle;
-	padding-top: 8px;
-	padding-bottom: 15px;
-}
