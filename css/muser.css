@@ -288,15 +288,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     src: url('../fonts/Lato-Bold.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
-	}
-			.modal, .modal .navbar-fixed-top{
-				padding-right:0 !important;
-			}
-			body{
-				overflow-y: scroll !important;
-				padding-right:0;
-			}
-			
+	}		
 			.modal-dialog-fullscreen {
 			  position: fixed;
 			  margin: 0;
@@ -309,7 +301,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 			}
 
 			.modal-content-fullscreen {
-			  background: url(../img/fondo-popup.png) no-repeat fixed center;
+			  background: rgb(255,255,255,0.8);
 			  -webkit-background-size: cover;
 			  -moz-background-size: cover;
 			  -o-background-size: cover;
@@ -344,6 +336,31 @@ now override the 3.3 new styles for modern browsers & apply opacity
 			  border-radius: 0;
 			  box-shadow: none;
 			}
+			
+			.modal-dialog-avisolegal {
+			  position: fixed;
+			  margin: 0;
+			  width: 100%;
+			  height: 100%;
+			  padding: 0;
+			}
+
+			.modal-content-avisolegal {
+			  background-color: lightblue;
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			  position: absolute;
+			  top: 0;
+			  right: 0;
+			  bottom: 0;
+			  left: 0;
+			  border-radius: 0;
+			  box-shadow: none;
+			  overflow:scroll;
+			}
+			
 			.vertical-center{
 				position: absolute;
 				top: 0;
