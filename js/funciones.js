@@ -1,11 +1,10 @@
 /* Funcion para mostrar la descripcion de los manifestos debajo del titulo de cada uno */
 function cambiar(esto){
 	vista=document.getElementById(esto).style.display;
-	if (vista=='none'){
+	if (vista=='none')
 		vista='block';
-	}else{
+	else
 		vista='none';
-	}
 
 	document.getElementById(esto).style.display = vista;
 }

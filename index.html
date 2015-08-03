@@ -19,16 +19,16 @@
         	</div>
 			<!-- Botones duplicados, pensando en funcionalidades distintas para cada uno, quizas se puede lograr desde mediaq, o js y unificar 1 boton -->
 	        <div class="navbar-right pull-right">
-	        	<a href="#seccionPedir" class="btn navbar-btn boton-morado visible-xs">SOLICITA TU INVITACIÓN</a>
+	        	<a href="#seccionPedir" class="btn navbar-btn boton-morado visible-xs">PIDE TU INVITACIÓN</a>
 	        </div>
 	        <div class="hidden-xs">
 	           	<form class="navbar-form navbar-right" role="form" id="formaa" name="form" method="post" action=""  onsubmit="return false;" >
 	        	  <div class="form-group has-feedback">
 					<input type="email" id="email" name="email" class="white-form form-control hidden-xs" placeholder="Escribe tu email" required/>
 					<!--<span class="glyphicon form-control-feedback" id="email1"></span>-->
-					<input type="submit" class="btn boton-morado" value="SOLICITA TU INVITACIÓN" />
+					<input type="submit" class="btn boton-morado" value="PIDE TU INVITACIÓN" />
 					<!-- Se esconde para que no se vea el efecto de que hay este boton -->
-					<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Solicita tu invitación</button>
+					<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Pide tu invitación</button>
 				  </div>
 	      		</form>
 	    	</div> 
@@ -133,7 +133,7 @@
 	<a name="seccionPedir"></a>
 	<div class="row row-blanca" >
 		<div class="text-center col-xs-12"  >
-			<h1 class="titulares"> Solicita tu invitación.</h1>
+			<h1 class="titulares"> Pide tu invitación.</h1>
 			<p class="texto-corrido">Seas artista o melómano escribe tu email para ser de los primeros en disfrutar de Muser.</p>
 		</div>
 		<div class="">
@@ -142,10 +142,10 @@
 					<input type="email" id="email" name="email" class="grey-form form-control" placeholder="Escribe tu email" required/>
 				</div>
 				
-				<input type="submit" class="btn boton-morado" value="SOLICITA TU INVITACIÓN" />
+				<input type="submit" class="btn boton-morado" value="PIDE TU INVITACIÓN" />
 				
 				<!-- Se esconde para que no se vea el efecto de que hay este boton -->
-				<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Solicita tu invitación</button>
+				<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Pide tu invitación</button>
             </form>	
 		</div>
 	</div>
@@ -161,37 +161,37 @@
 				<!-- Version PC -->
 				<ul class="hidden-xs center texto-corrido col-xs-10 col-xs-push-1">
 					<li>
-						<a class="titular-manifiesto" onclick="cambiar('ejemplo1'); return false;" >1. Somos libres </a>
+						<a class="titular-manifiesto" onmouseover="cambiar('ejemplo1'); return false;" onmouseout="cambiar('ejemplo1'); return true;" >1. Somos libres </a>
 						<div class="texto-manifiesto" id="ejemplo1" style="display: none;">
 							Nadie debería decirnos qué, cómo y cuándo hacer las cosas. Somos libres desde el momento en el que decidimos serlo, somos libres para escuchar la música que queremos. 
 						</div>
 					</li>
 					<li>
-						<a class="titular-manifiesto" onclick="cambiar('ejemplo2'); return false;" >2. La música tiene sus derechos </a>
+						<a class="titular-manifiesto" onmouseover="cambiar('ejemplo2'); return false;" onmouseout="cambiar('ejemplo2'); return true;" >2. La música tiene sus derechos </a>
 						<div class="texto-manifiesto" id="ejemplo2" style="display: none;">
 							y éstos deben ser respetados. El artista es el dueño de su creación y en Muser no contemplamos otra opción. 
 						</div>
 					</li>
 					<li>
-						<a class="titular-manifiesto" onclick="cambiar('ejemplo3'); return false;" >3. No pagamos Royalties </a>
+						<a class="titular-manifiesto" onmouseover="cambiar('ejemplo3'); return false;" onmouseout="cambiar('ejemplo3'); return true;" >3. No pagamos Royalties </a>
 						<div class="texto-manifiesto" id="ejemplo3" style="display: none;">
 							Los sistemas de pago de royalties basados en el número de reproducciones no son justos para los músicos, sencillamente no funcionan. Muser es una comunidad musical gratuita donde nuestros artistas comparten voluntariamente su música y donde el beneficio generado revierte en ellos de forma directa. 
 						</div>
 					</li>
 					<li>
-						<a class="titular-manifiesto" onclick="cambiar('ejemplo4'); return false;" >4. Si te mueres por la música, te mereces vivir de ella </a>
+						<a class="titular-manifiesto" onmouseover="cambiar('ejemplo4'); return false;" onmouseout="cambiar('ejemplo4'); return true;" >4. Si te mueres por la música, te mereces vivir de ella </a>
 						<div class="texto-manifiesto" id="ejemplo4" style="display: none;">
 							Hemos creado un universo musical en el que los artistas pueden generar beneficios mediante múltiples alternativas. Creemos en un nuevo modelo remunerativo pensado para los artistas, que facilite e incentive su profesionalización. 
 						</div>
 					</li>
 					<li>
-						<a id="titular5" class="titular-manifiesto" onclick="cambiar('ejemplo5','titular5'); return false;" >5. No estamos solos </a>
+						<a class="titular-manifiesto" onmouseover="cambiar('ejemplo5'); return false;" onmouseout="cambiar('ejemplo5'); return true;" >5. No estamos solos </a>
 						<div class="texto-manifiesto" id="ejemplo5" style="display: none;">
 							Nuestros partners nos ayudan a crear un ecosistema musical participativo donde artistas, promotores, productores, sellos, espacios y público colaboren en el desarrollo de esta iniciativa. Sin relaciones interesadas ni descompensadas entre quienes aman y apoyan la música. 
 						</div>
 					</li>
 					<li>
-						<a class="titular-manifiesto" onclick="cambiar('ejemplo6'); return false;" >6. Reinventamos la industria musical </a>
+						<a class="titular-manifiesto" onmouseover="cambiar('ejemplo6'); return false;" onmouseout="cambiar('ejemplo6'); return true;" >6. Reinventamos la industria musical </a>
 						<div class="texto-manifiesto" id="ejemplo6" style="display: none;">
 							¡Adiós reproducciones, hola valoraciones! No importa cuántas veces te han escuchado, lo que importa es quién te ha escuchado y cómo te ha valorado.
 							<br>Todos los artistas parten en igualdad de condiciones y son los musers quienes deciden con sus valoraciones el lugar de cada uno.
@@ -200,43 +200,32 @@
 						</div>
 					</li>
 					<li>
-						<a class="titular-manifiesto" onclick="cambiar('ejemplo7'); return false;" >7. No vendemos tu privacidad </a>
+						<a class="titular-manifiesto" onmouseover="cambiar('ejemplo7'); return false;" onmouseout="cambiar('ejemplo7'); return true;" >7. No vendemos tu privacidad </a>
 						<div class="texto-manifiesto" id="ejemplo7" style="display: none;">
 							Nos gusta acercarnos a los musers y conocer sus gustos musicales, pero para eso no necesitamos vender sus datos privados. Nadie utilizará tu nombre o tu correo electrónico para lucrarse. Te lo aseguramos. 
 						</div>
 					</li>
 					<li>
-						<a class="titular-manifiesto" onclick="cambiar('ejemplo8'); return false;" >8. No debemos nada a nadie… </a>
+						<a class="titular-manifiesto" onmouseover="cambiar('ejemplo8'); return false;" onmouseout="cambiar('ejemplo8'); return true;" >8. No debemos nada a nadie… </a>
 						<div class="texto-manifiesto" id="ejemplo8" style="display: none;">
 							Somos independientes y actuamos como tal. No respondemos a presiones ni dictados de terceros. No sacamos beneficio directo de las canciones que se comparten en Muser voluntariamente, de ahí nuestra autonomía. 
 						</div>
 					</li>
 					<li>
-						<a class="titular-manifiesto" onclick="cambiar('ejemplo9'); return false;" >9. ...ni nos casamos con nadie </a>
+						<a class="titular-manifiesto" onmouseover="cambiar('ejemplo9'); return false;" onmouseout="cambiar('ejemplo9'); return true;" >9. ...ni nos casamos con nadie </a>
 						<div class="texto-manifiesto" id="ejemplo9" style="display: none;">
 							Nuestra única ideología es nuestro amor por la música. 
 						</div>
 					</li>
 					<li>
-						<a class="titular-manifiesto" onclick="cambiar('ejemplo10'); return false;" >10. Mejoremos el mundo</a>
+						<a class="titular-manifiesto" onmouseover="cambiar('ejemplo10'); return false;" onmouseout="cambiar('ejemplo10'); return true;" >10. Mejoremos el mundo</a>
 						<div class="texto-manifiesto" id="ejemplo10" style="display: none;">
 							La música es cultura, es creatividad, es dinamismo, es unión... Muser nace para defender esos valores porque creemos en ellos como una manera de hacer el mundo mejor. 
 							<br>La música es nuestra razón de ser. 
 						</div>
 					</li>
 				</ul>
-<script>
-function mostrar(enla) {
-  obj = document.getElementById('oculto');
-  obj.style.visibility = (obj.style.visibility == 'hidden') ? 'visible' : 'hidden';
-  enla.innerHTML = (enla.innerHTML == '-') ? '+' : '-';
-}
-</script>
 
-<a href="#" onclick="mostrar(this); return false" />+</a>
-<div id="oculto" style="visibility:hidden">
-Este texto se verá cuando yo quiera
-</div>
 				<!-- Version movil -->
 				<ul class="visible-xs texto-corrido">
 					<li><a class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1">1. Somos libres</a></li>
