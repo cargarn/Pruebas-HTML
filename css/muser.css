@@ -153,7 +153,16 @@ ol.center { text-align: center; list-style-position:inside;}
 
 }
 
+.texto-footer-avisolegal{
+	font-family: 'LatoLight', sans-serif;
+	font-size: 8.7px;
+	line-height: normal;
+	color: #C4C4C4;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 50px;
 
+}
 
 
 .texto-footer{
