@@ -63,7 +63,7 @@ nav.navbar.navbar-default {
 	cursor:pointer;
 }
 
-.titular-manifiesto{
+.titular-manifiesto {
 	font-family: 'LatoHairline', sans-serif;
 	font-size: 15px;
 	line-height:20px;
@@ -72,7 +72,7 @@ nav.navbar.navbar-default {
 	padding-bottom: 10px;
 }
 
-.texto-manifiesto{
+.texto-manifiesto {
 	font-family: 'LatoLight', sans-serif;
 	font-size: 13px;
 	line-height:16px;
