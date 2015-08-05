@@ -317,9 +317,15 @@
 				</div>
 				<div class="modal-body texto-corrido">
 					<div class="row row-centered">
-						<button type="button" class="btn boton-negro col-xs-2 col-centered"  data-toggle="modal" onClick="manifesto_set(-1,-1)">&lt;</button>
-						<div class="col-xs-8 col-centered" id='text'></div>
-						<button type="button" class="btn boton-negro col-xs-2 col-centered"  data-toggle="modal" onClick="manifesto_set(-1,1)">&gt;</button>
+						<a class="left carousel-control col-xs-1" onclick="manifesto_set(-1,-1)" role="button">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Anterior</span>
+						</a>
+						<a class="right carousel-control col-xs-1" onclick="manifesto_set(-1,-1)" role="button">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Siguiente</span>
+						</a>
+						<div class="col-xs-10 col-centered" id='text'></div>
 					</div>	
 				</div>	
 			</div><!-- /.modal-content -->
