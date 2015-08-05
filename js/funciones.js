@@ -91,8 +91,9 @@ $('#formaa').validate({
     }
  });
  
+var iCurr=0;
 function manifesto_set(iIndex, iMove){
-	var iCurr=0;
+	
 	var tJson='[{"title": "1. Somos libres", "text":  "Nadie debería decirnos qué, cómo y cuándo hacer las cosas.<br> Somos libres desde el momento en el que decidimos serlo, somos libres para escuchar la música que queremos. "},'+
 				 '{"title": "2. La música tiene sus derechos", "text":  "...y éstos deben ser respetados.<br> El artista es el dueño de su creación y en Muser no contemplamos otra opción. "},'+
 	             '{"title": "3. No pagamos Royalties", "text":  "Los sistemas de pago de royalties basados en el número de reproducciones no son justos para los músicos, sencillamente no funcionan. Muser es una comunidad musical gratuita donde nuestros artistas comparten voluntariamente su música y donde el beneficio generado revierte en ellos de forma directa. "},'+
@@ -104,13 +105,16 @@ function manifesto_set(iIndex, iMove){
 	             '{"title": "9. ...ni nos casamos con nadie ", "text":  "Nuestra única ideología es nuestro amor por la música. "},'+
 	             '{"title": "10. Mejoremos el mundo", "text":  "La música es cultura, es creatividad, es dinamismo, es unión... Muser nace para defender esos valores porque creemos en ellos como una manera de hacer el mundo mejor. <br>La música es nuestra razón de ser. "}]';
 	var oJson=JSON.parse(tJson);
-	if (iIndex>-1)
-	{
+	if (iIndex>-1){
 		iCurr=iIndex;
-	}
-	else
-	{
-		iCurr+=iMove;
+	}else{
+		if((iCurr+iMove)>9){
+			iCurr=0;
+		}else if((iCurr+iMove)<0){
+			iCurr=9;
+		}else{
+			iCurr+=iMove;
+		}
 	}
 
 	var oHid=document.getElementById('title');

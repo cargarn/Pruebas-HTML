@@ -426,3 +426,15 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	margin: auto;
 }
 
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:justify;
+    /* inline-block space fix */
+    margin-right:-4px;
+}

@@ -315,12 +315,13 @@
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					<h4 class="modal-title titulares" id='title'></h4>
 				</div>
-				<div class="modal-body texto-corrido text-justify" id='text'>
+				<div class="modal-body texto-corrido">
+					<div class="row row-centered">
+						<button type="button" class="btn boton-negro col-xs-2 col-centered"  data-toggle="modal" onClick="manifesto_set(-1,-1)">&lt;</button>
+						<div class="col-xs-8 col-centered" id='text'></div>
+						<button type="button" class="btn boton-negro col-xs-2 col-centered"  data-toggle="modal" onClick="manifesto_set(-1,1)">&gt;</button>
+					</div>	
 				</div>	
-				<div class="modal-footer">
-					<button type="button" class="btn boton-negro pull-left" data-dismiss="modal" data-toggle="modal" data-target="#popUp1" onClick="manifesto_set(-1,-1)">&lt;</button>
-					<button type="button" class="btn boton-negro pull-right" data-dismiss="modal" data-toggle="modal" data-target="#popUp1" onClick="manifesto_set(-1,-1)">&gt;</button>
-				 </div>	
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
@@ -383,7 +384,7 @@
 
 					TERCERA.- DERECHOS DE AUTOR Y MARCA 
 					<br><br>
-					Muser es una marca registrada por lo que queda prohibida la utilización ajena por cualquier medio incluyendo tanto el uso Del nombre como Del logotipo, salvo consentimiento expreso de  Muser. 
+					Muser es una marca registrada por lo que queda prohibida la utilización ajena por cualquier medio incluyendo tanto el uso del nombre como del logotipo, salvo consentimiento expreso de  Muser. 
 					Quedan reservados todos los derechos. 
 					Además, el sitio web de Muser -los contenidos propios, la programación y el diseño del sitio web- se encuentra plenamente protegido por los 
 					derechos de autor, quedando expresamente prohibida toda reproducción, comunicación, distribución y transformación de los referidos elementos 
@@ -397,7 +398,7 @@
 					<br><br><br>
 
 					QUINTA.- NULIDAD
-
+					<br><br>
 					En caso de que cualquier cláusula del presente documento sea declarada nula, las demás cláusulas seguirán vigentes y se interpretarán teniendo en cuenta 
 					la voluntad de las partes y la finalidad misma de las presentes condiciones. 
 					<br><br><br>
