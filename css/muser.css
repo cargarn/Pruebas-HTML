@@ -250,7 +250,6 @@ ol.center { text-align: center; list-style-position:inside;}
 }
 
 .boton-morado{
-
 	background: transparent;
 	color: #E5007E;
 	border-color: #E5007E;
@@ -269,17 +268,15 @@ ol.center { text-align: center; list-style-position:inside;}
 	background: #E5007E;
 	color: #FFFFFF;
 	border-color: #E5007E;
-
 }
 
 .boton-morado:hover{
 	background: #E5007E;
 	color: #FFFFFF;
 	border-color: #E5007E;
-
 }
-ul
-{
+
+ul{
     list-style-type: none;
     padding:0;
      margin:0;
@@ -426,15 +423,13 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	margin: auto;
 }
 
-/* centered columns styles */
-.row-centered {
-    text-align:center;
-}
-.col-centered {
-    display:inline-block;
-    float:none;
-    /* reset the text-align */
-    text-align:justify;
-    /* inline-block space fix */
-    margin-right:-4px;
+.vertical-center-manifiesto{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 85%;
+	height: 55%;
+	margin: auto;
 }

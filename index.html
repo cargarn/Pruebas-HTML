@@ -42,7 +42,7 @@
 	        <div class="hidden-xs">
 	           	<form class="navbar-form navbar-right" role="form" id="formaa" name="form" method="post" action=""  onsubmit="return false;" >
 	        	  <div class="form-group has-feedback">
-					<input type="email" id="email" name="email" class="white-form form-control hidden-xs" placeholder="Escribe tu email" required/>
+					<input type="email" id="email" name="email" class="white-form form-control hidden-xs" placeholder="Escribe tu email" onblur="this.placeholder='Escribe tu email'" onfocus="this.placeholder=''" required/>
 					<!--<span class="glyphicon form-control-feedback" id="email1"></span>-->
 					<input type="submit" class="btn boton-morado" value="SOLICITA TU INVITACIÓN" />
 					<!-- Se esconde para que no se vea el efecto de que hay este boton -->
@@ -157,7 +157,7 @@
 		<div class="">
 			<form role="form" class="text-center"  name="form2" id="formaa2" method="post" action=""  onsubmit="return false;" >
 				<div class="form-group">
-					<input type="email" id="email" name="email" class="grey-form form-control" placeholder="Escribe tu email" required/>
+					<input type="email" id="email" name="email" class="grey-form form-control" placeholder="Escribe tu email" onblur="this.placeholder='Escribe tu email'" onfocus="this.placeholder=''" required/>
 				</div>
 				
 				<input type="submit" class="btn boton-morado" value="SOLICITA TU INVITACIÓN" />
@@ -300,7 +300,7 @@
 				</div>
 				<div class="modal-body vertical-center text-center">
 					<h4 class="modal-title titulares">¡Gracias!</h4>
-					<p class="texto-corrido">Te hemos mandado un mail <br> para que confirmes la invitación.</p>
+					<p class="texto-corrido">Te hemos mandado un email <br> para que confirmes la invitación.</p>
 					<button type="button" class="btn btn-default boton-negro hidden-xs" data-dismiss="modal"  onclick="document.form.email.value=''; document.form2.email.value='';">Ok</button>
 				</div>
 			</div><!-- /.modal-content -->
@@ -312,21 +312,13 @@
 		<div class="modal-dialog modal-dialog-manifiesto">
 			<div class="modal-content modal-content-manifiesto">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title titulares" id='title'></h4>
+					<button type="button" class="btn boton-gris pull-right" data-dismiss="modal" aria-hidden="true">OK</button>
 				</div>
-				<div class="modal-body texto-corrido">
-					<div class="row row-centered">
-						<a class="left carousel-control col-xs-1" onclick="manifesto_set(-1,-1)" role="button">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							<span class="sr-only">Anterior</span>
-						</a>
-						<a class="right carousel-control col-xs-1" onclick="manifesto_set(-1,-1)" role="button">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							<span class="sr-only">Siguiente</span>
-						</a>
-						<div class="col-xs-10 col-centered" id='text'></div>
-					</div>	
+				<div class="modal-body vertical-center-manifiesto text-center">
+					<h4 class="modal-title titulares" id='title'></h4><br>
+					<div class="" id='text'></div><br>
+					<button type="button" class="btn btn-default boton-negro"  onclick="manifesto_set(-1,-1)">&lt;</button>
+					<button type="button" class="btn btn-default boton-negro"  onclick="manifesto_set(-1,1)">&gt;</button>
 				</div>	
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
