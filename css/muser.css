@@ -57,14 +57,14 @@ nav.navbar.navbar-default {
 }
 
 .titular-manifiesto:hover, .titular-manifiesto:focus{
-	font-family: 'LatoBold', sans-serif;
+	font-family: 'LatoHairline', sans-serif;
 	color: #E5007E;
-	text-decoration:none;  
+	text-decoration:none;
 	cursor:pointer;
 }
 
-.titular-manifiesto{
-	font-family: 'LatoLight', sans-serif;
+.titular-manifiesto {
+	font-family: 'LatoHairline', sans-serif;
 	font-size: 15px;
 	line-height:20px;
 	color: #1E1E1E;
@@ -72,7 +72,7 @@ nav.navbar.navbar-default {
 	padding-bottom: 10px;
 }
 
-.texto-manifiesto{
+.texto-manifiesto {
 	font-family: 'LatoLight', sans-serif;
 	font-size: 13px;
 	line-height:16px;
@@ -82,16 +82,12 @@ nav.navbar.navbar-default {
 	padding-bottom: 15px;
 }
 @media(min-width: 768px){
-	.titular-manifiesto{
-				font-size: 20px;
+	.titular-manifiesto{font-size: 20px;
 				line-height: 20px;
-				padding-bottom: 17px;
-			}
-	.texto-manifiesto{
-				font-size: 18px;
-				line-height: 25px;}
-			}
-
+				padding-bottom: 17px;}
+	.texto-manifiesto{font-size: 18px;
+					line-height: 25px;}
+}
 
 nav.navbar.navbar-default {
 	border-top: none;
