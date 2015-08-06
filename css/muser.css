@@ -141,15 +141,19 @@ ol.center { text-align: center; list-style-position:inside;}
     padding-bottom: 75px;
 }
 .contenedor-enlaces{
-	margin-top:50px;
+	margin-top:100px;
+	margin-bottom:50px;
 }
 .texto-footer{
 	font-family: 'LatoLight', sans-serif;
-	font-size: 8.7px;
+	font-size: 10px;
 	line-height: normal;
 	color: #FFFFFF;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+@media(max-width:767px){
+	.texto-footer{font-size: 15px;}
 }
 .texto-footer:focus{
 	color: #E5007E;
