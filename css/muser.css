@@ -25,6 +25,13 @@ body.modal-open .supreme-container{
 	-ms-filter: blur(5px);
 	filter: blur(5px);
 }
+
+
+.carousel-inner{
+  width:100%;
+  max-height: 900px !important;
+}
+
 .titulares{
 	font-family: 'LatoHairline', sans-serif;
 	font-size: 37px;
@@ -52,16 +59,16 @@ body.modal-open .supreme-container{
 }
 
 .titular-manifiesto:hover, .titular-manifiesto:focus{
-	font-family: 'LatoHairline', sans-serif;
+	font-family: 'LatoLight', sans-serif;
 	color: #E5007E;
 	text-decoration:none;
 	cursor:pointer;
 }
 
 .titular-manifiesto {
-	font-family: 'LatoHairline', sans-serif;
-	font-size: 15px;
-	line-height:20px;
+	font-family: 'LatoLight', sans-serif;
+	font-size: 13px;
+	line-height:16px;
 	color: #1E1E1E;
 	vertical-align: middle;
 	padding-bottom: 10px;
@@ -77,9 +84,7 @@ body.modal-open .supreme-container{
 	padding-bottom: 15px;
 }
 @media(min-width: 768px){
-	.titular-manifiesto{font-size: 20px;
-				line-height: 20px;
-				padding-bottom: 17px;}
+	.titular-manifiesto,
 	.texto-manifiesto{font-size: 18px;
 					line-height: 25px;}
 }
@@ -87,6 +92,7 @@ body.modal-open .supreme-container{
 
 nav.navbar.navbar-default {
 	border-top: none;
+	height: 64px;
 	background-color: rgba(255,255,255,0.8) !important;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
@@ -103,9 +109,13 @@ nav.navbar.navbar-default {
 .row-blanca{
 	display: block;
 	background-color:#FFFFFF;
-	padding-top: 40px;
-    padding-bottom: 55px;
 }
+
+.reinventa{
+	height: 1009px !important;
+	padding-top: 42px;
+}
+
 
 .row-nisa{
 	color: #FFFFFF ;
@@ -131,22 +141,26 @@ ol.center { text-align: center; list-style-position:inside;}
 
 /* Estilos para el footer para pc y movil*/
 @media(min-width:768px){
-	.footer{padding-bottom: 40px !important;}}
+	.footer{
+		height: 568px;
+		padding-bottom: 40px !important;
+		}
+	}
 
 .footer{
 	display: block;
 	background-color: #1E1E1E;
 	color: #FFFFFF;
-	padding-top: 25px;
+	padding-top: 0px;
     padding-bottom: 75px;
 }
 .contenedor-enlaces{
-	margin-top:100px;
+	margin-top:225px;
 	margin-bottom:50px;
 }
 .texto-footer{
 	font-family: 'LatoLight', sans-serif;
-	font-size: 10px;
+	font-size: 12px;
 	line-height: normal;
 	color: #FFFFFF;
 	padding-left: 15px;
@@ -163,9 +177,11 @@ ol.center { text-align: center; list-style-position:inside;}
 	color: #E5007E;
 	text-decoration:none;
 }
-.texto-footer .avisolegal{
-	color: #C4C4C4;
+
+@media(max-width:767px){
+	.texto-footer.avisolegal{color: #C4C4C4;}
 }
+
 .texto-footer .avisolegal:focus{
 	color: #E5007E;
 	text-decoration:none;
@@ -191,6 +207,8 @@ ol.center { text-align: center; list-style-position:inside;}
 }
 
 .white-form{
+	height: 47px;
+	padding-left: 20px;
 	background: #FFFFFF;
 	color: #C4C4C4;
 	border: none;
@@ -216,10 +234,10 @@ ol.center { text-align: center; list-style-position:inside;}
 @media(min-width: 768px){
 	.grey-form{width: 270px;}
 }
-.form-control::-webkit-input-placeholder { color: #C4C4C4; font-family:'LatoLight';font-size: 10pt;  }
-.form-control:-moz-placeholder { color: #C4C4C4;font-family:'LatoLight'; font-size: 10pt;}
-.form-control::-moz-placeholder { color: #C4C4C4; font-family:'LatoLight'; font-size: 10pt;}
-.form-control:-ms-input-placeholder { color: #C4C4C4;font-family:'LatoLight'; font-size: 10pt;}
+.form-control::-webkit-input-placeholder { color: #C4C4C4; font-family:'LatoLight';font-size: 15px;  }
+.form-control:-moz-placeholder { color: #C4C4C4;font-family:'LatoLight'; font-size: 15px;}
+.form-control::-moz-placeholder { color: #C4C4C4; font-family:'LatoLight'; font-size: 15px;}
+.form-control:-ms-input-placeholder { color: #C4C4C4;font-family:'LatoLight'; font-size: 15px;}
 
 .boton-negro{
 	background: black;
@@ -244,12 +262,13 @@ ol.center { text-align: center; list-style-position:inside;}
 
 /* Boton morado de Solicitar invitacion */
 .boton-morado{
+	height: 47px;
 	background: transparent;
 	color: #E5007E;
 	border-color: #E5007E;
 	border-width: 2px;
 	font-family: 'LatoBold', sans-serif;
-	font-size: 8pt;
+	font-size: 12px;
 	-webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
 	-moz-transition: background .2s ease-in-out, border .2s ease-in-out;
 	-ms-transition: background .2s ease-in-out, border .2s ease-in-out;
@@ -261,12 +280,14 @@ ol.center { text-align: center; list-style-position:inside;}
 	background: #E5007E;
 	color: #FFFFFF;
 	border-color: #E5007E;
+	font-family: 'LatoBold', sans-serif;
 }
 
 .boton-morado:hover{
 	background: #E5007E;
 	color: #FFFFFF;
 	border-color: #E5007E;
+	font-family: 'LatoBold', sans-serif;
 }
 
 ul{
@@ -351,7 +372,7 @@ hr {
 	box-shadow: none;
 }
 
-/* Estilos pop up manifiesto */
+/* Estilos pop up manifiesto */	
 .modal-dialog-manifiesto {
 	position: fixed;
 	margin: 0;
