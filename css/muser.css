@@ -98,6 +98,10 @@ nav.navbar.navbar-default {
 	border-bottom-width: 1px;
 	border-bottom-color: #C4C4C4;
 }
+.navbar-logo {
+	padding-left: 60px;
+	padding-top: 10px;
+}
 
 .row-gris{
 	display: block;
