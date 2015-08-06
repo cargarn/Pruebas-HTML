@@ -160,9 +160,15 @@ ol.center { text-align: center; list-style-position:inside;}
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-top: 50px;
-
 }
-
+.texto-footer-avisolegal:focus{
+	color: #E5007E;
+	text-decoration:none;
+}
+.texto-footer-avisolegal:hover{
+	color: #E5007E;
+	text-decoration:none;
+}
 
 .texto-footer{
 	font-family: 'LatoLight', sans-serif;
@@ -172,13 +178,14 @@ ol.center { text-align: center; list-style-position:inside;}
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-top: 50px;
-
 }
 .texto-footer:focus{
 	color: #E5007E;
+	text-decoration:none;
 }
 .texto-footer:hover{
 	color: #E5007E;
+	text-decoration:none;
 }
 
 @media(min-width: 768px){
