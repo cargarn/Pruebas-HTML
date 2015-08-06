@@ -18,7 +18,13 @@
     font-weight: normal;
     font-style: normal;
 	}
-
+body.modal-open .supreme-container{
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
 .titulares{
 	font-family: 'LatoHairline', sans-serif;
 	font-size: 37px;
@@ -329,7 +335,7 @@ hr {
 }
 
 .modal-content-fullscreen {
-	background: rgba(255,255,255,0.8);
+	background: rgba(255,255,255,0.7);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -353,7 +359,7 @@ hr {
 }
 
 .modal-content-manifiesto {
-	background: rgba(255,255,255,0.8);
+	background: rgba(255,255,255,0.7);
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -413,7 +419,7 @@ hr {
 }
 
 .modal-content-avisolegal {
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.7);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
