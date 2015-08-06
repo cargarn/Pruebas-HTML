@@ -115,7 +115,6 @@ nav.navbar.navbar-default {
    
 }
 
-
 .row-nisa{
 	color: #FFFFFF ;
 	display: block;
@@ -161,7 +160,7 @@ ol.center { text-align: center; list-style-position:inside;}
 	padding-right: 15px;
 	margin-top: 50px;
 }
-.texto-footer-avisolegal:focus{
+.texto-footer:focus{
 	color: #E5007E;
 	text-decoration:none;
 }
@@ -198,9 +197,7 @@ ol.center { text-align: center; list-style-position:inside;}
     .text-sm-left {
         text-align: center;
     } 
-
 }
-
 
 .white-form{
 	background: #FFFFFF;
@@ -369,6 +366,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	box-shadow: none;
 }
 
+/* Estilos pop up manifiesto */
 .modal-dialog-manifiesto {
 	background: rgba(255,255,255,0.8);
 	position: fixed;
@@ -391,8 +389,49 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	left: 0;
 	border-radius: 0;
 	box-shadow: none;
+	overflow:scroll;
 }
-			
+.vertical-center-manifiesto{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 85%;
+	height: 55%;
+	margin: auto;
+}
+
+.popup-titular-manifiesto{
+	font-family: 'LatoHairline', sans-serif;
+	line-height: 27px;
+	font-size: 27px;
+	color: #1E1E1E;
+	padding-bottom: 5px;
+}
+.popup-texto-manifiesto{
+	font-family: 'LatoLight', sans-serif;
+	font-size: 15px;
+	color: #1E1E1E;
+	line-height: 20px;
+}
+@media(min-width: 768px){
+	.popup-titular-manifiesto{
+		font-size: 37px;
+		color: #1E1E1E;
+		line-height: 37px;
+		padding-bottom: 5px;
+	}
+	.popup-texto-manifiesto{
+		font-size: 20px;
+		line-height:25px;
+		padding-bottom: 10px;
+	}
+}
+
+/* Fin estilos pop up manifiesto */
+
+/* Para el pop up del aviso legal */			
 .modal-dialog-avisolegal {
 	background: rgba(255,255,255,0.8);
 	position: fixed;
@@ -417,7 +456,8 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	box-shadow: none;
 	overflow:scroll;
 }
-			
+/* Fin estilos pop up aviso legal*/
+
 .vertical-center{
 	position: absolute;
 	top: 0;
@@ -426,16 +466,5 @@ now override the 3.3 new styles for modern browsers & apply opacity
 	right: 0;
 	width: 50%;
 	height: 30%;
-	margin: auto;
-}
-
-.vertical-center-manifiesto{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 85%;
-	height: 55%;
 	margin: auto;
 }

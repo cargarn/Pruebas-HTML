@@ -315,10 +315,10 @@
 					<button type="button" class="btn boton-gris pull-right" data-dismiss="modal" aria-hidden="true">OK</button>
 				</div>
 				<div class="modal-body vertical-center-manifiesto text-center">
-					<h4 class="modal-title titulares" id='title'></h4><br>
-					<div class="" id='text'></div><br>
-					<button type="button" class="btn btn-default boton-negro"  onclick="manifesto_set(-1,-1)">&lt;</button>
-					<button type="button" class="btn btn-default boton-negro"  onclick="manifesto_set(-1,1)">&gt;</button>
+					<h4 class="modal-title popup-titular-manifiesto" id='title'></h4><br>
+					<div class="popup-texto-manifiesto" id='text'></div><br>
+					<button type="button" class="btn btn-default boton-negro"  onclick="manifesto_set(-1,-1); this.blur();">&lt;</button>
+					<button type="button" class="btn btn-default boton-negro"  onclick="manifesto_set(-1,1);this.blur();">&gt;</button>
 				</div>	
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
