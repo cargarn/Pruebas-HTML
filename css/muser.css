@@ -19,11 +19,11 @@
     font-style: normal;
 	}
 body.modal-open .supreme-container{
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
-	filter: blur(5px);
+	-webkit-filter: blur(40px);
+	-moz-filter: blur(40px);
+	-o-filter: blur(40px);
+	-ms-filter: blur(40px);
+	filter: blur(40px);
 }
 
 
@@ -159,7 +159,8 @@ ol.center { text-align: center; list-style-position:inside;}
     padding-bottom: 75px;
 }
 .contenedor-enlaces{
-	margin-top:225px;
+
+	margin-top:200px;
 	margin-bottom:50px;
 }
 .texto-footer{
@@ -257,7 +258,7 @@ ol.center { text-align: center; list-style-position:inside;}
 	width: 50px;
 }
 
-.boton-gris{
+.boton-gris, .boton-gris:hover, .boton-gris:focus{
 	background: rgb(183,183,183);
 	color: #FFFFFF;
 	height: 50px;
@@ -273,6 +274,7 @@ ol.center { text-align: center; list-style-position:inside;}
 	border-width: 2px;
 	font-family: 'LatoBold', sans-serif;
 	font-size: 12px;
+
 	-webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
 	-moz-transition: background .2s ease-in-out, border .2s ease-in-out;
 	-ms-transition: background .2s ease-in-out, border .2s ease-in-out;
@@ -354,6 +356,7 @@ hr {
 	
 /* Para la ventana modal de confirmacion de email metido */
 .modal-dialog-fullscreen {
+	background: rgba(255,255,255,0.10);
 	position: fixed;
 	margin: 0;
 	width: 100%;
@@ -362,7 +365,7 @@ hr {
 }
 
 .modal-content-fullscreen {
-	background: rgba(255,255,255,0.7);
+	background: rgba(255,255,255,0.10);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -378,6 +381,7 @@ hr {
 
 /* Estilos pop up manifiesto */	
 .modal-dialog-manifiesto {
+	background: rgba(255,255,255,1);
 	position: fixed;
 	margin: 0;
 	width: 100%;
@@ -386,7 +390,7 @@ hr {
 }
 
 .modal-content-manifiesto {
-	background: rgba(255,255,255,0.7);
+	background: rgba(255,255,255,1);
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -432,6 +436,9 @@ hr {
 		line-height:25px;
 		padding-bottom: 10px;
 	}
+}
+.modal-header{
+	border: none;
 }
 
 /* Fin estilos pop up manifiesto */
