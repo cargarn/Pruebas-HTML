@@ -19,6 +19,13 @@ $(document).ready(function(){
      
 });
 
+$("#miBoton").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#seccionPedir").offset().top
+    }, 500);
+    return false;
+});
+
 /* DE MOMENTO NO SE USARÁ
 function cambiar(esto){
 	vista=document.getElementById(esto).style.display;

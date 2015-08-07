@@ -36,8 +36,9 @@
               	<a class="" href="#"><img src="img/Muser.svg" alt="Muser" height="40px"></a>
         	</div>
 			<!-- Botones duplicados, pensando en funcionalidades distintas para cada uno, quizas se puede lograr desde mediaq, o js y unificar 1 boton -->
-	        <div class="navbar-right pull-right">
-	        	<a href="#seccionPedir" class="btn navbar-btn boton-morado visible-xs">SOLICITA TU INVITACIÓN</a>
+	        <div class=" visible-xs">
+	        	<!--<a href="#seccionPedir" class="btn navbar-btn boton-morado visible-xs">SOLICITA TU INVITACIÓN</a>-->
+				<input id="miBoton" type="button" class="btn navbar-btn boton-morado navbar-right pull-right" value="SOLICITA TU INVITACIÓN"/>
 	        </div>
 	        <div class="hidden-xs">
 	           	<form class="navbar-form navbar-right" role="form" id="formaa" name="form" method="post" action=""  onsubmit="return false;" >
@@ -152,7 +153,7 @@
 		</div>
 	</div>
 	
-	<a name="seccionPedir"></a>
+	<div id="seccionPedir"></div>
 	<div class="row row-blanca" >
 		<div class="text-center col-xs-12"  >
 			<h1 class="titulares"> Solicita tu invitación.</h1>
