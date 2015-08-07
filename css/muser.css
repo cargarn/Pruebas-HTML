@@ -99,8 +99,14 @@ nav.navbar.navbar-default {
 	border-bottom-color: #C4C4C4;
 }
 .navbar-logo {
+	padding-left: 30px;
+	padding-top: 10px;
+}
+@media(min-width: 768px){
+.navbar-logo {
 	padding-left: 60px;
 	padding-top: 10px;
+}
 }
 
 .row-gris{
