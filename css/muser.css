@@ -119,6 +119,9 @@ nav.navbar.navbar-default {
 .row-blanca{
 	display: block;
 	background-color:#FFFFFF;
+    vertical-align: bottom;
+    padding-top: 100px;
+    padding-bottom: 123px;
 }
 
 .reinventa{
