@@ -454,6 +454,14 @@ hr {
 	margin: auto;
 }
 
+.espejoBoton{
+	-moz-transform: scaleX(-1); /* Firefox */
+	-o-transform: scaleX(-1); /* Opera */
+	-webkit-transform: scaleX(-1); /* Chrome y Safari */
+	transform: scaleX(-1); /* w3org */
+	filter: FlipH; /* Internet Explorer */
+}
+
 .popup-titular-manifiesto{
 	font-family: 'LatoHairline', sans-serif;
 	line-height: 27px;
@@ -477,7 +485,7 @@ hr {
 	.popup-texto-manifiesto{
 		font-size: 20px;
 		line-height:25px;
-		padding-bottom: 10px;
+		padding-bottom: 15px;
 	}
 }
 .modal-header{
