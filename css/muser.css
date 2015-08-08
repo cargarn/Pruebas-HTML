@@ -52,7 +52,7 @@ body.modal-open .supreme-container{
 
 @media(min-width: 768px){
 	.titulares{font-size: 55px;
-				line-height: 35pt;
+				line-height: 40pt;
 				padding-bottom: 17px;}
 	.texto-corrido{font-size: 18px;
 					line-height: 18pt}
@@ -77,7 +77,7 @@ body.modal-open .supreme-container{
 .texto-manifiesto {
 	font-family: 'LatoLight', sans-serif;
 	font-size: 13px;
-	line-height:16px;
+	line-height:8px;
 	color: #1E1E1E;
 	vertical-align: middle;
 	padding-top: 8px;
@@ -109,24 +109,52 @@ nav.navbar.navbar-default {
 }
 }
 
+.padbot{
+	padding-right: 60px;
+}
+
 .row-gris{
 	display: block;
 	background-color: #F6F6F6;
-    vertical-align: center;
+    vertical-align: middle;
+}
+.row-gris-mani{
+	display: block;
+	background-color: #F6F6F6;
+    vertical-align: middle;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .texto-row-gris{
-	padding-top: 90px;
-    padding-bottom: 90px;
-    vertical-align: center;
+	display: block;
+	background-color: #F6F6F6;
+    vertical-align: middle;
+	padding-top: 200px;
+    padding-bottom: 300px;
+    vertical-align: middle;
+    height: 777px;
 }
-
+.texto-valoraciones{
+	display: block;
+	background-color: #F6F6F6;
+    vertical-align: middle;
+	padding-top: 85px;
+    padding-bottom: 80px;
+ }
 .row-blanca{
 	display: block;
 	background-color:#FFFFFF;
     vertical-align: bottom;
     padding-top: 100px;
     padding-bottom: 123px;
+}
+.row-invitaciones{
+	display: block;
+	background-color:#FFFFFF;
+    vertical-align: bottom;
+    height: 433px;
+    padding-top: 65px;
 }
 
 .reinventa{
@@ -142,8 +170,9 @@ nav.navbar.navbar-default {
 	background-repeat:no-repeat;
 	background-position:center;
     vertical-align: bottom;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: 580px;
 }
 
 .row-nisa .titulares{
@@ -395,7 +424,7 @@ hr {
 
 /* Estilos pop up manifiesto */	
 .modal-dialog-manifiesto {
-	background: rgba(255,255,255,1);
+	background: rgba(255,255,255,0.1);
 	position: fixed;
 	margin: 0;
 	width: 100%;
@@ -404,7 +433,7 @@ hr {
 }
 
 .modal-content-manifiesto {
-	background: rgba(255,255,255,1);
+	background: rgba(255,255,255,0.1);
 	position: absolute;
 	top: 0;
 	right: 0;
