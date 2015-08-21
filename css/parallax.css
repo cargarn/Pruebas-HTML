@@ -1,0 +1,13 @@
+
+
+
+#middel_parallax{
+    display: block;
+	background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 600px;
+	padding: 0 0 0 0;	
+	background-size: cover;
+    width: 100%;
+   
+}

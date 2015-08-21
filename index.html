@@ -26,28 +26,32 @@
 	<title>Muser | Proximamente</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/muser.css">
+	
+
 </head>
 
 <body>
 <!-- NAVBAR -->
-<div class="container-fluid">	
+<header>
+<div class="container-fluid supreme-container">	
 	<nav class="navbar navbar-default navbar-fixed-top">
     	<div class="container-fluid">  
-          	<div class="col-xs-1 navbar-header">
-              	<a class="" href="#"><img src="img/Muser.svg" alt="Muser" height="50"></a>
+          	<div class="col-xs-1 navbar-logo">
+              	<a class="" href="#"><img src="img/Muser.svg" alt="Muser" height="40px"></a>
         	</div>
 			<!-- Botones duplicados, pensando en funcionalidades distintas para cada uno, quizas se puede lograr desde mediaq, o js y unificar 1 boton -->
-	        <div class="navbar-right pull-right">
-	        	<a href="#seccionPedir" class="btn navbar-btn boton-morado visible-xs">SOLICITA TU INVITACIÓN</a>
+	        <div class=" visible-xs">
+	        	<!--<a href="#seccionPedir" class="btn navbar-btn boton-morado visible-xs">PIDE TU INVITACIÓN</a>-->
+				<input id="miBoton" type="button" class="btn navbar-btn boton-morado navbar-right pull-right" value="PIDE TU INVITACIÓN"/>
 	        </div>
 	        <div class="hidden-xs">
 	           	<form class="navbar-form navbar-right" role="form" id="formaa" name="form" method="post" action=""  onsubmit="return false;" >
-	        	  <div class="form-group has-feedback">
-					<input type="email" id="email" name="email" class="white-form form-control hidden-xs" placeholder="Escribe tu email" required/>
+	        	  <div class="form-group has-feedback padbot">
+					<input type="email" id="email" name="email" class="white-form form-control hidden-xs" placeholder="Escribe tu email" onblur="this.placeholder='Escribe tu email'" onfocus="this.placeholder=''" required/>
 					<!--<span class="glyphicon form-control-feedback" id="email1"></span>-->
-					<input type="submit" class="btn boton-morado" value="SOLICITA TU INVITACIÓN" />
+					<input type="submit" class="btn boton-morado" value="PIDE TU INVITACIÓN" />
 					<!-- Se esconde para que no se vea el efecto de que hay este boton -->
-					<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Solicita tu invitación</button>
+					<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Pide tu invitación</button>
 				  </div>
 	      		</form>
 	    	</div> 
@@ -57,8 +61,8 @@
 
 <!--Carrousel-->
 
-<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
-	<!-- Indicadores -->
+<div id="myCarousel" class="carousel slide carousel-fade supreme-container" data-ride="carousel" data-interval="5000"  >
+	<!-- Indicadores 
 	<ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		<li data-target="#myCarousel" data-slide-to="1"></li>
@@ -66,30 +70,31 @@
 		<li data-target="#myCarousel" data-slide-to="3"></li>
 		<li data-target="#myCarousel" data-slide-to="4"></li>
 	</ol>
+	-->
+
 	<!-- Imagenes -->
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
-			<img src="img/slider1.jpg" alt="slider1">
+			<img src="img/Muser-Electro.jpg" alt="slider1">
+			 <div class="container">
+          <div class="carousel-caption">
+            <h1>MUSER.</h1>
+            <p class="lead">Play free.</p>
+          </div>
+        </div>
 		</div>
 
 		<div class="item">
-			<img src="img/slider2.jpg" alt="slider2">
+			<img src="img/Muser-Indie.jpg" alt="slider2">
 		</div>
 
 		<div class="item">
-			<img src="img/slider3.jpg" alt="slider3">
+			<img src="img/Muser-Rap.jpg" alt="slider3">
 		</div>
 
-		<div class="item">
-			<img src="img/slider4.jpg" alt="slider4">
-		</div>
-
-		<div class="item">
-			<img src="img/slider5.jpg" alt="slider5">
-		</div>
 	</div>
 
-	<!-- Controles -->
+	<!-- Controles 
 	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 		<span class="sr-only">Anterior</span>
 	</a>
@@ -98,45 +103,54 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Siguiente</span>
   </a>
+	
 
+	-->
 </div>
 
-
+</header>
 <!-- Fin Carousel -->
-
-<div class="container-fluid">
-	<div class="row row-blanca">
+<main>
+<div class="container-fluid supreme-container">
+<section>
+	<div class="row row-blanca reinventa">
 		<div class="text-center col-xs-12">
-			<h1 class="titulares"><p>Hoy se reinventa la música,<br class="hidden-xs"><span class="lg"> si quieres.</p></h1></span>
-			<p class="texto-corrido">Unimos a músicos y melómanos como nunca antes se había visto.</p>
-			<img src="img/musercity.png" class="img-responsive center-block col-xs-push-1 col-xs-10 col-md-6 col-md-push-3">
+			<h1 class="titulares">Hoy se reinventa la música,<br class="hidden-xs"><span class="lg"> si quieres.</span><h1>
+			<p class="texto-corrido" style="padding-bottom: 80px;">Unimos a músicos y melómanos como nunca antes se había visto.</p>
+			<img src="img/Muser-Quieres.png" class="img-responsive center-block" style="height:500px;width:auto;">
 		</div>
 	</div>
-	<div class="row row-gris text-sm-left"> <!-- Aqui media Query, text-left en sm -->
-		<div class="col-md-push-1 col-md-6">
-			<h1 class="titulares">Eres Libre.<br>Escucha sólo <br class="visible-xs"> la música <br class="visible-xs"> que te gusta.</h1>
+</section>
+<section>
+	<div class="row row-gris text-sm-left">
+		<div class=" texto-row-gris  col-sm-push-1 col-sm-5" >
+			<h1  class="titulares">Eres Libre.<br>Escucha sólo <br class="visible-xs"> la música <br class="visible-xs"> que te gusta.</h1>
 			<p class="texto-corrido">
 				Cada persona es única y tus gustos también lo son.<br>
 				Por eso ofrecemos contenidos 100% personalizados para cada muser.<br>
 				¿Cómo lo hacemos?</p>
 		</div>
-		<div class="col-md-5">
-			<img src="img/Muser-Libertad.svg" class="img-responsive center-block" >
+		<div class="col-sm-5 col-sm-push-1">
+			<img src="img/Muser-Libre2.svg" class="img-responsive center-block" style="height:auto; width="auto";"/>
 		</div>
 		
 	</div>
+</section>
+
+<section>
 	<div class="row row-nisa">
 		<div class="text-center col-xs-12" >
-			<p></p>
-			<h1 class="titulares"><p>Nisa.<br>Nuestra Sabia, poderosa y complaciente musa.</p></h1>
+			<h1 class="titulares"><p>Nisa.<br>Nuestra sabia, poderosa y complaciente musa.</p></h1>
 			<p class="texto-corrido">Nisa es nuestro algoritmo matemático en forma de musa que actúa en función de tus gustos personales.<br>
 				Ella se alimenta de las valoraciones que haces de cada canción y aprende de ti para proporcionarte música nueva constantemente.<br>
 				Nisa se nutre de las interacciones para inspirar a todos los musers. <br>
 				Nisa, te estábamos esperando.</p>
 		</div>
 	</div>
+</section>
+<section>
 	<div class="row row-gris">
-		<div class="text-center col-xs-12">
+		<div class="text-center texto-valoraciones col-xs-12">
 			<h1 class="titulares">
 				<p>Adiós reproducciones.<br>Hola valoraciones</p>
 			</h1>
@@ -145,31 +159,34 @@
 				Todos vosotros, musers y artistas, podéis valorar toda la música de Muser del 0 al 10. <br>
 				Nisa detecta qué artistas son los más valorados de su género, <br>
 				para recomendarlos a los usuarios que todavía no los conocen. </p>
-				<img src="img/Muser-Valoraciones.svg" class="img-responsive center-block" style="height:100px;" alt="Valoraciones">
+				<img src="img/Muser-Valoraciones-1.svg" class="img-responsive center-block" style="height:160px; margin-top:50px;" alt="Valoraciones">
 		</div>
 	</div>
-	
-	<a name="seccionPedir"></a>
-	<div class="row row-blanca" >
+</section>
+<section>
+	<div id="seccionPedir"></div>
+	<div class="row row-invitaciones" >
 		<div class="text-center col-xs-12"  >
-			<h1 class="titulares"> Solicita tu invitación.</h1>
+			<h1 class="titulares"> Pide tu invitación.</h1>
 			<p class="texto-corrido">Seas artista o melómano escribe tu email para ser de los primeros en disfrutar de Muser.</p>
-		</div>
-		<div class="">
+		
+		
 			<form role="form" class="text-center"  name="form2" id="formaa2" method="post" action=""  onsubmit="return false;" >
 				<div class="form-group">
-					<input type="email" id="email" name="email" class="grey-form form-control" placeholder="Escribe tu email" required/>
+					<input type="email" id="email" name="email" class="grey-form form-control" placeholder="Escribe tu email" onblur="this.placeholder='Escribe tu email'" onfocus="this.placeholder=''" required/>
 				</div>
 				
-				<input type="submit" class="btn boton-morado" value="SOLICITA TU INVITACIÓN" />
+				<input type="submit" class="btn boton-morado" value="PIDE TU INVITACIÓN" />
 				
 				<!-- Se esconde para que no se vea el efecto de que hay este boton -->
-				<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Solicita tu invitación</button>
+				<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Pide tu invitación</button>
             </form>	
+		
 		</div>
 	</div>
-
-	<div class="row row-gris">
+</section>
+<section>
+	<div class="row row-gris-mani supreme-container">
 		<div class="text-center">
 		<h1 class="titulares"> Nuestra filosofía. Nuestro manifiesto.</h1>
 			<p class="texto-corrido">
@@ -180,37 +197,37 @@
 				<!-- Version PC -->
 				<ul class="hidden-xs center texto-corrido col-xs-8 col-xs-push-2">
 					<li id="titular-1" class="dropdown dropdown-processed">
-						<a class="titular-manifiesto dropdown-link" href="#" >1. Somos libres </a>
+						<a class="titular-manifiesto dropdown-link" href="#" >1. Somos libres.</a>
 						<div class="texto-manifiesto dropdown-container" id="ejemplo1" style="display: none;">
 							Nadie debería decirnos qué, cómo y cuándo hacer las cosas.<br> Somos libres desde el momento en el que decidimos serlo, somos libres para escuchar la música que queremos. 
 						</div>
 					</li>
 					<li id="titular-2" class="dropdown dropdown-processed">
-						<a class="titular-manifiesto dropdown-link" href="#" >2. La música tiene sus derechos</a>
+						<a class="titular-manifiesto dropdown-link" href="#" >2. La música tiene sus derechos.</a>
 						<div class="texto-manifiesto dropdown-container" id="ejemplo2" style="display: none;">
 							...y éstos deben ser respetados.<br> El artista es el dueño de su creación y en Muser no contemplamos otra opción. 
 						</div>
 					</li>
 					<li id="titular-3" class="dropdown dropdown-processed">
-						<a class="titular-manifiesto dropdown-link" href="#" >3. No pagamos Royalties</a>
+						<a class="titular-manifiesto dropdown-link" href="#" >3. No pagamos Royalties.</a>
 						<div class="texto-manifiesto dropdown-container" id="ejemplo3" style="display: none;">
 							Los sistemas de pago de royalties basados en el número de reproducciones no son justos para los músicos, sencillamente no funcionan. Muser es una comunidad musical gratuita donde nuestros artistas comparten voluntariamente su música y donde el beneficio generado revierte en ellos de forma directa. 
 						</div>
 					</li>
 					<li id="titular-4" class="dropdown dropdown-processed">
-						<a class="titular-manifiesto dropdown-link" href="#" >4. Si te mueres por la música, te mereces vivir de ella </a>
+						<a class="titular-manifiesto dropdown-link" href="#" >4. Si te mueres por la música, te mereces vivir de ella.</a>
 						<div class="texto-manifiesto dropdown-container" id="ejemplo4" style="display: none;">
 							Hemos creado un universo musical en el que los artistas pueden generar beneficios mediante múltiples alternativas. Creemos en un nuevo modelo remunerativo pensado para los artistas, que facilite e incentive su profesionalización. 
 						</div>
 					</li>
 					<li id="titular-5" class="dropdown dropdown-processed">
-						<a class="titular-manifiesto dropdown-link" href="#" >5. No estamos solos </a>
+						<a class="titular-manifiesto dropdown-link" href="#" >5. No estamos solos.</a>
 						<div class="texto-manifiesto dropdown-container" id="ejemplo5" style="display: none;">
 							Nuestros partners nos ayudan a crear un ecosistema musical participativo donde artistas, promotores, productores, sellos, espacios y público colaboren en el desarrollo de esta iniciativa.<br> Sin relaciones interesadas ni descompensadas entre quienes aman y apoyan la música. 
 						</div>
 					</li>
 					<li id="titular-6" class="dropdown dropdown-processed">
-						<a class="titular-manifiesto dropdown-link" href="#" >6. Reinventamos la industria musical </a>
+						<a class="titular-manifiesto dropdown-link" href="#" >6. Reinventamos la industria musical.</a>
 						<div class="texto-manifiesto dropdown-container" id="ejemplo6" style="display: none;">
 							¡Adiós reproducciones, hola valoraciones! No importa cuántas veces te han escuchado, lo que importa es quién te ha escuchado y cómo te ha valorado.
 							<br>Todos los artistas parten en igualdad de condiciones y son los musers quienes deciden con sus valoraciones el lugar de cada uno.
@@ -219,7 +236,7 @@
 						</div>
 					</li>
 					<li id="titular-7" class="dropdown dropdown-processed">
-						<a class="titular-manifiesto dropdown-link" href="#" >7. No vendemos tu privacidad </a>
+						<a class="titular-manifiesto dropdown-link" href="#" >7. No vendemos tu privacidad.</a>
 						<div class="texto-manifiesto dropdown-container" id="ejemplo7" style="display: none;">
 							Nos gusta acercarnos a los musers y conocer sus gustos musicales, pero para eso no necesitamos vender sus datos privados. Nadie utilizará tu nombre o tu correo electrónico para lucrarse.<br> Te lo aseguramos. 
 						</div>
@@ -232,13 +249,13 @@
 						</div>
 					</li>
 					<li id="titular-9" class="dropdown dropdown-processed">
-						<a class="titular-manifiesto dropdown-link" href="#" >9. ...ni nos casamos con nadie </a>
+						<a class="titular-manifiesto dropdown-link" href="#" >9. ...ni nos casamos con nadie.</a>
 						<div class="texto-manifiesto dropdown-container" id="ejemplo9" style="display: none;">
 							Nuestra única ideología es nuestro amor por la música. 
 						</div>
 					</li>
 					<li id="titular-10" class="dropdown dropdown-processed">
-						<a class="titular-manifiesto dropdown-link" href="#" >10. Mejoremos el mundo</a>
+						<a class="titular-manifiesto dropdown-link" href="#" >10. Mejoremos el mundo.</a>
 						<div class="texto-manifiesto dropdown-container" id="ejemplo10" style="display: none;">
 							La música es cultura, es creatividad, es dinamismo, es unión... Muser nace para defender esos valores porque creemos en ellos como una manera de hacer el mundo mejor. 
 							<br>La música es nuestra razón de ser. 
@@ -248,47 +265,66 @@
 				
 				<!-- Version movil -->
 				<ul class="visible-xs texto-corrido">
-					<li><a class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1">1. Somos libres</a></li>
-					<li><a class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp2" >2. La música tiene sus derechos</a></li>
-					<li><a class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp3" >3. No pagamos Royalties</a></li>
-					<li><a class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" >4. Si te mueres por la música, te mereces vivir de ella</a></li>
-					<li><a class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" >5. No estamos solos </a></li>
-					<li><a class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" >6. Reinventamos la industria musical </a></li>
-					<li><a class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" >7. No vendemos tu privacidad </a></li>
-					<li><a class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" >8. No debemos nada a nadie… </a></li>
-					<li><a class="titular-manifiesto" ="#" data-toggle="modal" data-target="#popUp1" >9. ...ni nos casamos con nadie </a></li>
-					<li><a class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp10" >10. Mejoremos el mundo </a></li>
+					<li><a id="t1" class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" onClick="manifesto_set(0,-1)">1. Somos libres.</a></li>
+					<li><a id="t2" class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" onClick="manifesto_set(1,-1)">2. La música tiene sus derechos.</a></li>
+					<li><a id="t3" class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" onClick="manifesto_set(2,-1)">3. No pagamos Royalties.</a></li>
+					<li><a id="t4" class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" onClick="manifesto_set(3,-1)">4. Si te mueres por la música, te mereces vivir de ella.</a></li>
+					<li><a id="t5" class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" onClick="manifesto_set(4,-1)">5. No estamos solos.</a></li>
+					<li><a id="t6" class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" onClick="manifesto_set(5,-1)">6. Reinventamos la industria musical.</a></li>
+					<li><a id="t7" class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" onClick="manifesto_set(6,-1)">7. No vendemos tu privacidad.</a></li>
+					<li><a id="t8" class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" onClick="manifesto_set(7,-1)">8. No debemos nada a nadie…</a></li>
+					<li><a id="t9" class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" onClick="manifesto_set(8,-1)">9. ...ni nos casamos con nadie.</a></li>
+					<li><a id="t10" class="titular-manifiesto" href="#" data-toggle="modal" data-target="#popUp1" onClick="manifesto_set(9,-1)">10. Mejoremos el mundo.</a></li>
 				</ul>
 			</p>
 		</div>
 	</div>
 </div>
-
+</section>
+</main>
 <!-- Footer -->
-<div class="footer">
+<footer>
+<div class="footer supreme-container">
 	<div class="container-fluid">
 		<div class="row text-center">
 			<!--<div class="col-xs-2 col-xs-offset-5">-->
-				<img src="img/Muser-logotipo.svg" alt="MUSER"> <!-- class="center-block">-->
+				<img src="img/Muser-logotipo.svg" alt="MUSER" height="155px"> <!-- class="center-block">-->
 			<!--</div>-->
 		</div>
-		<div class="row">
-			<div class="texto-footer col-xs-2 hidden-xs ">
-				<a class="texto-footer" href="#" data-toggle="modal" data-target="#AvisoLegalPopUp">Aviso Legal</a>			
+		<div class="contenedor-enlaces">
+			<!-- Para PC -->
+			<div class="row texto-footer hidden-xs">
+				<!--<div class="texto-footer-avisolegal col-xs-2 hidden-xs ">
+					<a class="texto-footer-avisolegal" href="#" data-toggle="modal" data-target="#AvisoLegalPopUp">Aviso Legal</a>		
+				</div>
+				<div class="texto-footer">-->
+					<a class="texto-footer pull-right " href="https://twitter.com/Playmuser_es" target="_blank">Twitter</a><br class="hidden-xs">
+					<a class="texto-footer pull-right" href="https://www.facebook.com/Playmuser" target="_blank">Facebook</a><br class="hidden-xs">
+					<a class="texto-footer pull-right" href="https://instagram.com/playmuser_es" target="_blank">Instagram</a><br class="hidden-xs">
+					<a class="texto-footer avisolegal pull-left hidden-xs" href="#" data-toggle="modal" data-target="#AvisoLegalPopUp">Aviso Legal</a>	
+					<a class="texto-footer pull-right" href="url" target="_blank">Vimeo</a>
+				<!--</div>	-->
 			</div>
-			<div class="texto-footer text-sm-right col-xs-12 col-sm-2 col-sm-push-8 ">
-				<a class="texto-footer" href="https://twitter.com/Playmuser_es" target="_blank">Twitter</a><br class="hidden-xs">
-				<a class="texto-footer" href="https://www.facebook.com/Playmuser" target="_blank">Facebook</a><br class="hidden-xs">
-				<a class="texto-footer" href="https://instagram.com/playmuser_es" target="_blank">Instagram</a><br class="hidden-xs">
-				<a class="texto-footer" href="url" target="_blank">Vimeo</a>
-			</div>	
+			<!-- Para movil -->
+			<div class="row visible-xs">
+				<div class="texto-footer text-sm-right col-xs-12 col-sm-2 col-sm-push-8 ">
+					<a class="texto-footer" href="https://twitter.com/Playmuser_es" target="_blank">Twitter</a><br class="hidden-xs">
+					<a class="texto-footer" href="https://www.facebook.com/Playmuser" target="_blank">Facebook</a><br class="hidden-xs">
+					<a class="texto-footer" href="https://instagram.com/playmuser_es" target="_blank">Instagram</a><br class="hidden-xs">
+					<a class="texto-footer" href="url" target="_blank">Vimeo</a>
+				</div>
+				<div class="texto-footer avisolegal text-sm-right col-xs-12">
+					<a class="texto-footer avisolegal" href="#" data-toggle="modal" data-target="#AvisoLegalPopUp">Aviso Legal</a>	
+				</div>
+			</div>
+			<hr class="hidden-xs">
 		</div>
-		<hr class="hidden-xs">
 	</div>
 </div>
+</footer>
 
 	<!-- Ventana modal para Pedir Invitacion -->
-	<div class="modal fade " id="myModalFullscreen"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal " id="myModalFullscreen"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-fullscreen">
 			<div class="modal-content modal-content-fullscreen">
 				<div class="modal-header visible-xs">
@@ -296,83 +332,26 @@
 				</div>
 				<div class="modal-body vertical-center text-center">
 					<h4 class="modal-title titulares">¡Gracias!</h4>
-					<p class="texto-corrido">Te hemos mandado un mail <br> para que confirmes la invitación.</p>
+					<p class="texto-corrido">Te hemos mandado un email <br> para que confirmes la invitación.</p>
 					<button type="button" class="btn btn-default boton-negro hidden-xs" data-dismiss="modal"  onclick="document.form.email.value=''; document.form2.email.value='';">Ok</button>
 				</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
-
+	
 	<!-- Ventana modal para los moviles en el manifesto -->
 	<div class="modal fade" id="popUp1"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" hidden="true">
 		<div class="modal-dialog modal-dialog-manifiesto">
 			<div class="modal-content modal-content-manifiesto">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title titulares">1. Somos libres</h4>
+					<button type="button" class="btn boton-gris pull-right" data-dismiss="modal" aria-hidden="true">OK</button>
 				</div>
-				<div class="modal-body texto-corrido text-justify">
-					Nadie debería decirnos qué, cómo y cuándo hacer las cosas. Somos libres desde el momento en el que decidimos serlo, somos libres para escuchar la música que queremos.
+				<div class="modal-body vertical-center-manifiesto text-center">
+					<h4 class="modal-title popup-titular-manifiesto" id='title'></h4><br>
+					<div class="popup-texto-manifiesto" id='text'></div><br>
+					<button type="button" class="btn btn-default boton-negro"  onclick="manifesto_set(-1,-1); this.blur();">&lt;</button>
+					<button type="button" class="btn btn-default boton-negro"  onclick="manifesto_set(-1,1);this.blur();">&gt;</button>
 				</div>	
-				<div class="modal-footer">
-					<button type="button" class="btn boton-negro pull-left" data-dismiss="modal" data-toggle="modal" data-target="#popUp10">&lt;</button>
-					<button type="button" class="btn boton-negro pull-right" data-dismiss="modal" data-toggle="modal" data-target="#popUp2">&gt;</button>
-				 </div>	
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-
-	<div class="modal fade" id="popUp2"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" hidden="true">
-		<div class="modal-dialog modal-dialog-manifiesto">
-			<div class="modal-content modal-content-manifiesto">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title titulares">2. La música tiene sus derechos</h4>
-				</div>
-				<div class="modal-body texto-corrido text-justify">
-					y éstos deben ser respetados. El artista es el dueño de su creación y en Muser no contemplamos otra opción. 
-				</div>	
-				<div class="modal-footer">
-					<button type="button" class="btn boton-gris pull-left" data-dismiss="modal" data-toggle="modal" data-target="#popUp1">&lt;</button>
-					<button type="button" class="btn boton-gris pull-right" data-dismiss="modal" data-toggle="modal" data-target="#popUp3">&gt;</button>
-				 </div>	
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-	
-	<div class="modal fade" id="popUp3"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" hidden="true">
-		<div class="modal-dialog modal-dialog-manifiesto">
-			<div class="modal-content modal-content-manifiesto">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title titulares">3. No pagamos Royalties</h4>
-				</div>
-				<div class="modal-body texto-corrido text-justify">
-					Los sistemas de pago de royalties basados en el número de reproducciones no son justos para los músicos, sencillamente no funcionan. Muser es una comunidad musical gratuita donde nuestros artistas comparten voluntariamente su música y donde el beneficio generado revierte en ellos de forma directa. 
-				</div>	
-				<div class="modal-footer">
-					<button type="button" class="btn boton-negro pull-left" data-dismiss="modal" data-toggle="modal" data-target="#popUp2">&lt;</button>
-					<button type="button" class="btn boton-negro pull-right" data-dismiss="modal" data-toggle="modal" data-target="#popUp10">&gt;</button>
-				 </div>	
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-	
-	<div class="modal fade" id="popUp10"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" hidden="true">
-		<div class="modal-dialog modal-dialog-manifiesto">
-			<div class="modal-content modal-content-manifiesto">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title titulares">10. Mejoremos el mundo</h4>
-				</div>
-				<div class="modal-body texto-corrido text-justify">
-					La música es cultura, es creatividad, es dinamismo, es unión... Muser nace para defender esos valores porque creemos en ellos como una manera de hacer el mundo mejor. 
-					<br>La música es nuestra razón de ser. 
-				</div>	
-				<div class="modal-footer">
-					<button type="button" class="btn boton-blanco pull-left" data-dismiss="modal" data-toggle="modal" data-target="#popUp3"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
-					<button type="button" class="btn boton-blanco pull-right" data-dismiss="modal" data-toggle="modal" data-target="#popUp1"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
-				 </div>	
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
@@ -387,14 +366,78 @@
 				</div>
 				<div class="modal-body text-justify">
 					<p class="texto-corrido col-xs-10 col-xs-push-1">
-					Textos simulados: su función como texto de relleno o como herramienta para comparar el efecto visual de diferentes tipos de letra
-					Los textos simulados son aquellos textos que, en ausencia de un texto definitivo, sirven como sustituto de futuros contenidos en la producción de maquetas para publicaciones o sitios web. También son llamados textos dummy, ficticios o de relleno. A parte de ser utilzados dentro del sector de la imprenta y del grafismo, algunos compositores de canciones también utilizan textos simulados al componer melodías, cantando estos textos antes de escribir las letras de la canción. Ya en el siglo XVI, los tipógrafos solían usar textos simulados.
-					La utilidad de un contenido sin sentido
-					Los textos simulados son también utilizados para comparar variedades tipográficas y para trabajos de maquetación y diseño. El contenido de la mayor parte de estos textos carece de sentido. Debido a su uso difundido como texto de relleno para trabajos de diseño, la ininteligibilidad resulta de gran importancia, ya que la percepción humana puede reconocer ciertos esquemas y repeticiones en textos. Si la repartición de las letras y la longitud de las “palabras” son arbitrarias, la atención del lector quedará fijada en la apreciación del efecto visual y la legibilidad de diferentes caracteres (tipografía), así como en la distribución del texto en la página (maquetación o área tipográfica). Por ello, los textos simulados están compuestos a menudo por una secuencia más o menos arbitraria de palabras o sílabas. Esto evita que los esquemas de repetición puedan turbar la impresión visual general y facilita la comparación de distintos tipos de caracteres. Por otra parte, supone una ventaja que el texto simulado sea relativamente realista, de modo que la maqueta corresponda con el producto final y la futura publicación no sufra cambios.<br>
-					¿Incomprensibilidad o legibilidad? Esa es la cuestión.
-					El texto simulado más conocido y extendido es el "Lorem ipsum", cuyo origen parece que se remonta al S. XVI. Lorem ipsum está escrito en un seudo-latín, relativamente cercano al latín real. Pese a contener una serie de palabras latinas y a imitar el ritmo de la mayoría de las lenguas europeas con escritura latina, el Lorem ipsum sigue resultando ininteligible. La ventaja del origen latino y de la falta de sentido del contenido de Lorem ipsum consiste en que el lector no se distrae con el contenido del texto, sino que puede concentrar su atención únicamente en el diseño.
-					Una desventaja de Lorem ipsum reside en que en latín algunas letras aparecen más a menudo que otras, lo que genera una impresión visual diferente. Además, en latín solamente se escriben en mayúsculas las palabras a principio de oración, por lo que Lorem ipsum no puede por ejemplo, imitar fielmente un texto alemán; idioma en el que cada sustantivo se escribe en mayúsculas. Por esta razón, Lorem ipsum es sólo parcialmente adecuado como sustituto visual de textos alemanes. En caso de que el texto simulado deba servir para comparar singularidades tipográficas, sería recomendable escoger textos que contengan a ser posible, todas las letras y símbolos de la lengua empleada.
-					Hoy en día, existe una gran cantidad de textos simulados legibles, utilizados básicamente como textos de relleno. Estas alternativas al Lorem ipsum clásico suelen ser divertidas y cuentan pequeñas historias cómicas o sin sentido.</p>
+					CONDICIONES GENERALES DE USO DEL SITIO WEB DE DiamondFans S.L.
+					<br>www.playmuser.com
+					<br><br>
+					DiamondFans S.L. (en adelante Muser ) con domicilio social en Calle Leizarán, 54, 28670, Villaviciosa de Odón, Madrid; inscrita en el Registro Mercantil de Madrid, 05/03/2015, 33236, 8, M 598115, 1.  con CIF B87235362 pone a disposición en su sitio web www.playmuser.com (en adelante SITIO WEB) determinados contenidos de carácter informativo sobre sus actividades. 
+					<br><br>
+					Las presentes condiciones generales pretenden regular el acceso y uso, y en general, la relación entre este SITIO WEB y sus USUARIOS exclusivamente. Las presentes condiciones generales se le exponen al USUARIO en el sitio web  en todas y cada una de las páginas y cada vez 
+					que un USUARIO introduce sus datos en los formularios existentes, para que las lea, las imprima, archive y acepte a través de internet, no pudiendo 
+					el USUARIO introducir sus datos efectivamente sin que se haya producido esta aceptación. 
+					<br><br>
+					El acceso al sitio web de Muser implica sin reservas la aceptación de las presentes condiciones generales de uso que el USUARIO afirma 
+					comprender en su totalidad. El USUARIO se compromete a no utilizar el sitio web y los servicios que se ofrecen en el mismo para la realización de 
+					actividades contrarias a la ley y a respetar en todo momento las presentes condiciones generales.
+					<br><br><br>
+
+					PRIMERA.- CONDICIONES DE ACCESO Y USO  
+					<br><br>   
+					1.1.-La utilización del sitio web de Muser no conlleva la obligatoriedad de inscripción del USUARIO, salvo si este USUARIO desea. 
+					utilizar la base de datos de artículos existentes en EL SITIO WEB donde será preciso que se registre cumplimentando un formulario básico, ésta suscripción 
+					se regirá por condiciones específicas para cada tipo de usuario. Las condiciones de acceso y uso del presente sitio web se rigen estrictamente por la legalidad 
+					vigente y por el principio de buena fe comprometiéndose el USUARIO a realizar un buen uso de la web.  Quedan prohibidos todos los actos que vulneren la 
+					legalidad, derechos o intereses de terceros: derecho a la intimidad, protección de datos, propiedad intelectual etc. Expresamente Muser 
+					prohíbe los siguientes:                
+					<br><br><br>
+
+					1.1.1.- Realizar acciones que puedan producir en el sitio web o a través del mismo por cualquier medio cualquier tipo de daño a los sistemas de 
+					Muser o a terceros.        
+					<br><br><br>
+
+					1.1.2.- La publicidad y la distribución de información comercial de forma directa o encubierta sin la debida autorización, así como prácticas tales como el envío de 
+					correos masivos ("spaming") o envío de grandes mensajes con el fin de bloquear servidores de la red ("mail bombing").        
+
+					<br><br><br>
+					1.2.- Muser podrá denegar en cualquier momento el acceso a su sitio web si detecta algún uso contrario a la legalidad, la buena fe o 
+					a las presentes condiciones generales.           
+
+					<br><br><br>
+					SEGUNDA.- CONTENIDOS. 
+					<br><br>
+					Los contenidos incorporados en este sitio web han sido elaborados e incluidos por:     
+					<br><br>   
+					2.1.- Muser utilizando fuentes internas y externas de tal modo que Muser únicamente se hace responsable de los contenidos 
+					elaborados de forma interna.            
+					<br><br>
+					2.2.- Muser se reserva el derecho a modificar en cualquier momento los contenidos existentes en su sitio web.   
+					<br><br><br>		 
+
+					TERCERA.- DERECHOS DE AUTOR Y MARCA 
+					<br><br>
+					Muser es una marca registrada por lo que queda prohibida la utilización ajena por cualquier medio incluyendo tanto el uso del nombre como del logotipo, salvo consentimiento expreso de  Muser. 
+					Quedan reservados todos los derechos. 
+					Además, el sitio web de Muser -los contenidos propios, la programación y el diseño del sitio web- se encuentra plenamente protegido por los 
+					derechos de autor, quedando expresamente prohibida toda reproducción, comunicación, distribución y transformación de los referidos elementos 
+					protegidos salvo consentimiento expreso de Muser	
+					<br><br><br>
+
+					CUARTA.- JURISDICCIÓN Y LEY APLICABLE 
+					<br><br>
+					Las presentes condiciones generales se rigen por la legislación española. Son competentes para resolver toda controversia o conflicto que se derive de 
+					las presentes condiciones generales los Juzgados de Madrid renunciando expresamente el USUARIO a cualquier otro fuero que pudiera corresponderle.
+					<br><br><br>
+
+					QUINTA.- NULIDAD
+					<br><br>
+					En caso de que cualquier cláusula del presente documento sea declarada nula, las demás cláusulas seguirán vigentes y se interpretarán teniendo en cuenta 
+					la voluntad de las partes y la finalidad misma de las presentes condiciones. 
+					<br><br><br>
+
+					SEXTA.- RENUNCIA
+					<br><br>
+					Muser podrá no ejercitar alguno de los derechos y facultades 
+					conferidos en este documento lo que no implicará en ningún caso la renuncia a los mismos salvo reconocimiento expreso por parte de Muser.
+					</p>
 				</div>
 					
 			</div><!-- /.modal-content -->
@@ -407,6 +450,5 @@
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/funciones.js"></script>
-	
-</body>
+
 </html>
