@@ -32,10 +32,18 @@ body.modal-open .supreme-container{
   max-height: 900px !important;
 }
 
+
+.carousel-caption {
+    margin: 0 auto; 
+	height: 380px;
+    text-align:center;
+}
+
+
 .titulares{
 	font-family: 'LatoHairline', sans-serif;
-	font-size: 37px;
-	line-height: 25pt;
+	font-size: 45px;
+	line-height: 34pt;
 	color: #1E1E1E;
 	padding-bottom: 1px;
 }
@@ -43,11 +51,13 @@ body.modal-open .supreme-container{
 
 .texto-corrido{
 	font-family: 'LatoLight', sans-serif;
-	font-size: 13px;
-	line-height:16px;
+	font-size: 14px;
+	line-height:20px;
 	color: #1E1E1E;
 	vertical-align: middle;
-	padding-bottom: 10px;
+
+	padding-bottom: 0px;
+	padding-top: 0px;
 }
 
 @media(min-width: 768px){
@@ -55,7 +65,9 @@ body.modal-open .supreme-container{
 				line-height: 40pt;
 				padding-bottom: 17px;}
 	.texto-corrido{font-size: 18px;
-					line-height: 18pt}
+					line-height: 18pt;
+					padding-top: 0px;
+}
 }
 
 .titular-manifiesto:hover, .titular-manifiesto:focus{
@@ -72,6 +84,13 @@ body.modal-open .supreme-container{
 	color: #1E1E1E;
 	vertical-align: middle;
 	padding-bottom: 10px;
+}
+@media(max-width: 767px){
+	.titular-manifiesto{
+	font-size: 20px;
+	line-height:15px;
+
+	}
 }
 
 .texto-manifiesto {
@@ -135,6 +154,9 @@ nav.navbar.navbar-default {
     vertical-align: middle;
     height: 777px;
 }
+
+
+
 .texto-valoraciones{
 	display: block;
 	background-color: #F6F6F6;
@@ -157,6 +179,13 @@ nav.navbar.navbar-default {
     padding-top: 65px;
 }
 
+
+@media(max-width:767px){
+	.row-invitaciones{
+    height: 510px;
+}
+	}
+
 .reinventa{
 	height: 1009px !important;
 	padding-top: 42px;
@@ -166,14 +195,21 @@ nav.navbar.navbar-default {
 .row-nisa{
 	color: #FFFFFF ;
 	display: block;
-	background-image: url('../img/Muser-Nisa.jpg');
-	background-repeat:no-repeat;
-	background-position:center;
-    vertical-align: bottom;
+	background: url(../img/Muser-Nisa-para.jpg) 50% 0 no-repeat fixed;
     padding-top: 150px;
     padding-bottom: 150px;
     height: 580px;
+	background-size: cover;
+    
 }
+
+@media(max-width:767px){
+	.row-nisa{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 610px;
+}
+	}
 
 .row-nisa .titulares{
 	color: #FFFFFF;
@@ -200,10 +236,11 @@ ol.center { text-align: center; list-style-position:inside;}
 	color: #FFFFFF;
 	padding-top: 0px;
     padding-bottom: 75px;
+    height: 380px;
 }
 .contenedor-enlaces{
-
-	margin-top:200px;
+	background-color: #1E1E1E;
+	margin-top:80px;
 	margin-bottom:50px;
 }
 .texto-footer{
@@ -272,7 +309,8 @@ ol.center { text-align: center; list-style-position:inside;}
 	background:#F6F6F6;
 	color: #C4C4C4;
 	outline: none;
-	width: 200px;
+	width: 290px;
+	height: 50px;
   	border: none !important;
  	 -webkit-box-shadow: none !important;
  	 -moz-box-shadow: none !important;
@@ -280,12 +318,19 @@ ol.center { text-align: center; list-style-position:inside;}
 
 }
 @media(min-width: 768px){
-	.grey-form{width: 270px;}
+	.grey-form{width: 270px;
+	}
+
+	.form-control::-webkit-input-placeholder { color: #C4C4C4; font-family:'LatoLight';font-size: 15px;  }
+	.form-control:-moz-placeholder { color: #C4C4C4;font-family:'LatoLight'; font-size: 15px;}
+	.form-control::-moz-placeholder { color: #C4C4C4; font-family:'LatoLight'; font-size: 15px;}
+	.form-control:-ms-input-placeholder { color: #C4C4C4;font-family:'LatoLight'; font-size: 15px;}
+
 }
-.form-control::-webkit-input-placeholder { color: #C4C4C4; font-family:'LatoLight';font-size: 15px;  }
-.form-control:-moz-placeholder { color: #C4C4C4;font-family:'LatoLight'; font-size: 15px;}
-.form-control::-moz-placeholder { color: #C4C4C4; font-family:'LatoLight'; font-size: 15px;}
-.form-control:-ms-input-placeholder { color: #C4C4C4;font-family:'LatoLight'; font-size: 15px;}
+.form-control::-webkit-input-placeholder { color: #C4C4C4; font-family:'LatoLight';font-size: 18px;  }
+.form-control:-moz-placeholder { color: #C4C4C4;font-family:'LatoLight'; font-size: 18px;}
+.form-control::-moz-placeholder { color: #C4C4C4; font-family:'LatoLight'; font-size: 18px;}
+.form-control:-ms-input-placeholder { color: #C4C4C4;font-family:'LatoLight'; font-size: 18px;}
 
 .boton-negro{
 	background: black;
@@ -433,7 +478,7 @@ hr {
 }
 
 .modal-content-manifiesto {
-	background-color: white;
+	background: rgba(255,255,255,0.1);
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -449,17 +494,9 @@ hr {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	width: 90%;
-	height: 70%;
+	width: 85%;
+	height: 55%;
 	margin: auto;
-}
-
-.espejoBoton{
-	-moz-transform: scaleX(-1); /* Firefox */
-	-o-transform: scaleX(-1); /* Opera */
-	-webkit-transform: scaleX(-1); /* Chrome y Safari */
-	transform: scaleX(-1); /* w3org */
-	filter: FlipH; /* Internet Explorer */
 }
 
 .popup-titular-manifiesto{
@@ -485,7 +522,7 @@ hr {
 	.popup-texto-manifiesto{
 		font-size: 20px;
 		line-height:25px;
-		padding-bottom: 15px;
+		padding-bottom: 10px;
 	}
 }
 .modal-header{

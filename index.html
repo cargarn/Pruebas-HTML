@@ -26,9 +26,12 @@
 	<title>Muser | Proximamente</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/muser.css">
+	
+
 </head>
 <body>
 <!-- NAVBAR -->
+<header>
 <div class="container-fluid supreme-container">	
 	<nav class="navbar navbar-default navbar-fixed-top">
     	<div class="container-fluid">  
@@ -37,17 +40,17 @@
         	</div>
 			<!-- Botones duplicados, pensando en funcionalidades distintas para cada uno, quizas se puede lograr desde mediaq, o js y unificar 1 boton -->
 	        <div class=" visible-xs">
-	        	<!--<a href="#seccionPedir" class="btn navbar-btn boton-morado visible-xs">SOLICITA TU INVITACIÓN</a>-->
-				<input id="miBoton" type="button" class="btn navbar-btn boton-morado navbar-right pull-right" value="SOLICITA TU INVITACIÓN"/>
+	        	<!--<a href="#seccionPedir" class="btn navbar-btn boton-morado visible-xs">PIDE TU INVITACIÓN</a>-->
+				<input id="miBoton" type="button" class="btn navbar-btn boton-morado navbar-right pull-right" value="PIDE TU INVITACIÓN"/>
 	        </div>
 	        <div class="hidden-xs">
 	           	<form class="navbar-form navbar-right" role="form" id="formaa" name="form" method="post" action=""  onsubmit="return false;" >
 	        	  <div class="form-group has-feedback padbot">
 					<input type="email" id="email" name="email" class="white-form form-control hidden-xs" placeholder="Escribe tu email" onblur="this.placeholder='Escribe tu email'" onfocus="this.placeholder=''" required/>
 					<!--<span class="glyphicon form-control-feedback" id="email1"></span>-->
-					<input type="submit" class="btn boton-morado" value="SOLICITA TU INVITACIÓN" />
+					<input type="submit" class="btn boton-morado" value="PIDE TU INVITACIÓN" />
 					<!-- Se esconde para que no se vea el efecto de que hay este boton -->
-					<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Solicita tu invitación</button>
+					<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Pide tu invitación</button>
 				  </div>
 	      		</form>
 	    	</div> 
@@ -57,7 +60,7 @@
 
 <!--Carrousel-->
 
-<div id="myCarousel" class="carousel slide carousel-fade supreme-container" data-ride="carousel" data-interval="5000" height="200" >
+<div id="myCarousel" class="carousel slide carousel-fade supreme-container" data-ride="carousel" data-interval="5000"  >
 	<!-- Indicadores 
 	<ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -71,24 +74,23 @@
 	<!-- Imagenes -->
 	<div class="carousel-inner" role="listbox">
 		<div class="item active">
-			<img src="img/slider1.jpg" alt="slider1">
+			<img src="img/Muser-Electro.jpg" alt="slider1">
+			 <div class="container">
+          <div class="carousel-caption">
+            <h1>MUSER.</h1>
+            <p class="lead">Play free.</p>
+          </div>
+        </div>
 		</div>
 
 		<div class="item">
-			<img src="img/slider2.jpg" alt="slider2">
+			<img src="img/Muser-Indie.jpg" alt="slider2">
 		</div>
 
 		<div class="item">
-			<img src="img/slider3.jpg" alt="slider3">
+			<img src="img/Muser-Rap.jpg" alt="slider3">
 		</div>
 
-		<div class="item">
-			<img src="img/slider4.jpg" alt="slider4">
-		</div>
-
-		<div class="item">
-			<img src="img/slider5.jpg" alt="slider5">
-		</div>
 	</div>
 
 	<!-- Controles 
@@ -105,30 +107,36 @@
 	-->
 </div>
 
-
+</header>
 <!-- Fin Carousel -->
-
+<main>
 <div class="container-fluid supreme-container">
+<section>
 	<div class="row row-blanca reinventa">
 		<div class="text-center col-xs-12">
-			<h1 class="titulares">Hoy se reinventa la música,<br class="hidden-xs"><span class="lg"> si quieres.</h1></span>
+			<h1 class="titulares">Hoy se reinventa la música,<br class="hidden-xs"><span class="lg"> si quieres.</span><h1>
 			<p class="texto-corrido" style="padding-bottom: 80px;">Unimos a músicos y melómanos como nunca antes se había visto.</p>
-			<img src="img/musercity.png" class="img-responsive center-block col-xs-push-1 col-xs-10 col-sm-6 col-sm-push-4" style="height:500px;width:auto;">
+			<img src="img/Muser-Quieres.png" class="img-responsive center-block" style="height:500px;width:auto;">
 		</div>
 	</div>
+</section>
+<section>
 	<div class="row row-gris text-sm-left">
-		<div class=" texto-row-gris  col-sm-push-1 col-sm-6" >
+		<div class=" texto-row-gris  col-sm-push-1 col-sm-5" >
 			<h1  class="titulares">Eres Libre.<br>Escucha sólo <br class="visible-xs"> la música <br class="visible-xs"> que te gusta.</h1>
 			<p class="texto-corrido">
 				Cada persona es única y tus gustos también lo son.<br>
 				Por eso ofrecemos contenidos 100% personalizados para cada muser.<br>
 				¿Cómo lo hacemos?</p>
 		</div>
-		<div class="col-sm-5">
-			<img src="img/Muser-Libre.svg" class="img-responsive center-block" style="height:777px;"/>
+		<div class="col-sm-5 col-sm-push-1">
+			<img src="img/Muser-Libre2.svg" class="img-responsive center-block" style="height:auto; width="auto";"/>
 		</div>
 		
 	</div>
+</section>
+
+<section>
 	<div class="row row-nisa">
 		<div class="text-center col-xs-12" >
 			<h1 class="titulares"><p>Nisa.<br>Nuestra sabia, poderosa y complaciente musa.</p></h1>
@@ -138,6 +146,8 @@
 				Nisa, te estábamos esperando.</p>
 		</div>
 	</div>
+</section>
+<section>
 	<div class="row row-gris">
 		<div class="text-center texto-valoraciones col-xs-12">
 			<h1 class="titulares">
@@ -151,11 +161,12 @@
 				<img src="img/Muser-Valoraciones-1.svg" class="img-responsive center-block" style="height:160px; margin-top:50px;" alt="Valoraciones">
 		</div>
 	</div>
-	
+</section>
+<section>
 	<div id="seccionPedir"></div>
 	<div class="row row-invitaciones" >
 		<div class="text-center col-xs-12"  >
-			<h1 class="titulares"> Solicita tu invitación.</h1>
+			<h1 class="titulares"> Pide tu invitación.</h1>
 			<p class="texto-corrido">Seas artista o melómano escribe tu email para ser de los primeros en disfrutar de Muser.</p>
 		
 		
@@ -164,15 +175,16 @@
 					<input type="email" id="email" name="email" class="grey-form form-control" placeholder="Escribe tu email" onblur="this.placeholder='Escribe tu email'" onfocus="this.placeholder=''" required/>
 				</div>
 				
-				<input type="submit" class="btn boton-morado" value="SOLICITA TU INVITACIÓN" />
+				<input type="submit" class="btn boton-morado" value="PIDE TU INVITACIÓN" />
 				
 				<!-- Se esconde para que no se vea el efecto de que hay este boton -->
-				<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Solicita tu invitación</button>
+				<button hidden="true" type="button" id="pide" name="pide" data-toggle="modal" data-target="#myModalFullscreen">Pide tu invitación</button>
             </form>	
 		
 		</div>
 	</div>
-
+</section>
+<section>
 	<div class="row row-gris-mani supreme-container">
 		<div class="text-center">
 		<h1 class="titulares"> Nuestra filosofía. Nuestro manifiesto.</h1>
@@ -267,8 +279,10 @@
 		</div>
 	</div>
 </div>
-
+</section>
+</main>
 <!-- Footer -->
+<footer>
 <div class="footer supreme-container">
 	<div class="container-fluid">
 		<div class="row text-center">
@@ -306,6 +320,7 @@
 		</div>
 	</div>
 </div>
+</footer>
 
 	<!-- Ventana modal para Pedir Invitacion -->
 	<div class="modal " id="myModalFullscreen"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -333,8 +348,8 @@
 				<div class="modal-body vertical-center-manifiesto text-center">
 					<h4 class="modal-title popup-titular-manifiesto" id='title'></h4><br>
 					<div class="popup-texto-manifiesto" id='text'></div><br>
-					<button alt="Anterior" class="btn btn-default espejoBoton" onclick="manifesto_set(-1,-1);this.blur();"><img src="img/Muser-Flechas.svg" ></button>
-					<button alt="Siguiente" class="btn btn-default" onclick="manifesto_set(-1,1);this.blur();"><img src="img/Muser-Flechas.svg" ></button>
+					<button type="button" class="btn btn-default boton-negro"  onclick="manifesto_set(-1,-1); this.blur();">&lt;</button>
+					<button type="button" class="btn btn-default boton-negro"  onclick="manifesto_set(-1,1);this.blur();">&gt;</button>
 				</div>	
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
@@ -434,4 +449,5 @@
 	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/funciones.js"></script>
+
 </html>
